@@ -1,2 +1,26 @@
-<tw-storydata name="digm530-awt" startnode="1" creator="Twine" creator-version="2.0.10" ifid="FB51247F-B442-43AD-B287-85AC9C3F4DDD" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="504.5,292.5">Double-click this passage to edit it.</tw-passagedata>
+<tw-storydata name="digm530-awt" startnode="4" creator="Twine" creator-version="2.0.10" ifid="FB51247F-B442-43AD-B287-85AC9C3F4DDD" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
+
+</script><tw-passagedata pid="1" name="Intro" tags="" position="601,102">&lt;br&gt;
+&lt;p&gt;
+(print: &quot;...&quot; + $epitaph)
+&lt;/p&gt;
+
+&quot;You die.&quot;
+
+# [[I don&#39;t care why | earlyDeath]]
+# [[Tell me more | start]]</tw-passagedata>
+<tw-passagedata pid="2" name=" earlyDeath" tags="" position="804,203">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="3" name=" start" tags="" position="804,0">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="4" name="Narrator Intro" tags="" position="194,101">&#39;&#39;NARRATOR ONLY&#39;&#39;
+
+A character is just about to utter their last words:
+
+[[Their final words... | finalWords]]</tw-passagedata>
+<tw-passagedata pid="5" name=" finalWords" tags="" position="402,103">(set: $epitaph to (prompt: &quot;Their final words were:&quot;))
+
+(display: &quot;Intro&quot;)</tw-passagedata>
 </tw-storydata>
