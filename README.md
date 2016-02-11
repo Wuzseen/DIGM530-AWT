@@ -1,2 +1,2 @@
 # DIGM 530 Project
-Tim Day, Weicheng Liu, Amanda Jessup
+Tim Day - DIGM MS Student
