@@ -356,17 +356,169 @@ While it is your grandmother, your seclusion should not be impeded. Would you sn
 [[Continue | interludeFinal]] </tw-passagedata>
 <tw-passagedata pid="29" name=" catScream01" tags="" position="945,1225">Double-click this passage to edit it.
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="30" name=" gmaIgnore01" tags="" position="6.666666666666667,1255">Double-click this passage to edit it.
+<tw-passagedata pid="30" name=" gmaIgnore01" tags="" position="6.666666666666667,1255">(if: $weapon is &quot;staff&quot;)[
+GRANDMA!
+
+Then you remember, she *always* called you (print: $epitaph). That&#39;s where it came from.
+
+You throw your staff to the side. Overjoyed, you forget your druidic oaths.
+
+You run to open the door when suddenly your brain simply shuts off. Breaking your oaths results in death. You only manage to say &quot;(print: $epitaph)&quot; one last time.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Once a traitor always a traitor.
+
+Before you could even raise your sword your grandmother viciously attacks you with a dagger.
+
+Regicide is a serious crime. All you can hope for is that your grandmother finds justice for all her transgressions.
+
+Your majesty dies.
+](else:)[
+You open the door. You expect your grandmother. It wasn&#39;t your grandmother.
+
+No, it was a bear who could speak.
+
+And that bear could say (print: $epitaph).
+
+As an ace hunter you should&#39;ve known about this species of grandma imitating bears but how could you?
+
+Needless to say the bear mauls you to death.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="31" name=" gmaIgnore02" tags="" position="8.333333333333334,1383.3333333333335">Double-click this passage to edit it.
+<tw-passagedata pid="31" name=" gmaIgnore02" tags="" position="5,1386.6666666666667">(if: $weapon is &quot;staff&quot;)[
+No. It cannot be your grandmother.
+
+You stand ready. A wide variety of magic is at your fingertips and you are ready to go.
+
+The door opens and you unleash a massive spell that propels an inferno of fire towards the front door.
+
+For a nature loving druid you know an exceedingly large amount of fire spells.
+
+But it actually *is* your grandmother.
+
+As your grandmother is engulfed in flames you attempt to save her. However in the act you only end up catching yourself aflame.
+
+You burn not only yourself and your hut but the entire forest as well.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+You have decided. Your grandmother is a traitor and must answer for her crimes.
+
+Your grandmother flings the door open and brandishes a dagger. She charges at you.
+
+You prepare to deflect the attack but your weapon is stuck in its sheathe. You struggle profusely to free it from the sheathe&#39;s grasp. But there&#39;s no luck.
+
+Your grandmother descends upon you with a flurry of stabs. She continuously chants (print: $epitaph) as you bleed out.
+](else:)[
+You load your crossbow with a bolt. If it&#39;s not your grandmother then you will have a glorious new hunt.
+
+The door opens yet nothing is in the door frame.
+
+Curiously you lower your crossbow. Confused.
+
+Suddenly above you the ceiling bursts open. A massive bear falls from the infinite black void. The bear absolutely crushes you.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="32" name=" gmaDoor01" tags="" position="181.66666666666669,1260">Double-click this passage to edit it.
+<tw-passagedata pid="32" name=" gmaDoor01" tags="" position="181.66666666666669,1260">(if: $weapon is &quot;staff&quot;)[
+&quot;HI GRANDMA!!!&quot;
+
+You&#39;re so excited to see your grandmother standing there before you. She&#39;s absolutely beautiful.
+
+Yet a druid cannot see family from their previous life without paying the ultimate price.
+
+Though unintentional, your Grandmother&#39;s mere presence results in a catastrophic heart failure. Unfortunately you collapse to the ground and die.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+&quot;Hello... *grandmother*. Or should I say, traitor!&quot;
+
+
+](else:)[
+&quot;Hello Grandma&quot;
+
+You invite your grandmother in. You spend the evening trading stories and together you cook a grand meal.
+
+It seems though in your haste to cook a large meal, you attract a wild bear which comes crashing into your hut. Destroying both you *and* your grandmother in the process.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="33" name=" gmaDoor02" tags="" position="183.33333333333334,1390">Double-click this passage to edit it.
+<tw-passagedata pid="33" name=" gmaDoor02" tags="" position="183.33333333333334,1390">(if: $weapon is &quot;staff&quot;)[
+Grandma stands before you in the frame of your door.
+
+But you know what you have to do. A druid can&#39;t break their oath. The must abandon all past family.
+
+So you shut the door. You hear your grandmother on the other side of the door begin to cry.
+
+&quot;(print: $epitaph)!&quot; She cries.
+
+The pain is too much for you to bear. You are stuck between two great loves.
+
+You grab your staff. Determined to find a solution. You think of an incantation that might solve your problems.
+
+You prepare a spell to break your oath and reunite you with your grandmother.
+
+Your spell is powerful. It draws in the energy from the magical glade around your hut. Yet you can&#39;t contain the spell and it explodes.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+You instantly notice a dagger in your Grandmother&#39;s hand. You shut the door immediately.
+
+Your grandmother, the nimble minx that she is, manages to block it with her foot. With incredible leg strength she blasts the door open.
+
+You tumble backwards your sword falling out of your hand.
+
+Your traitorous grandmother wastes no time in pressing her advantage and she stabs you to death in a flurry of blades.
+](else:)[
+Your Grandma waves to you in the doorway. But behind her a bear is barreling towards your hut.
+
+Your hunter instinct is to sacrifice your grandmother. You slam the door shut in her face.
+
+This is actually mostly ineffective. The bear tears through your grandmother like tissue paper. Your hut and own body fare no better.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="34" name=" gmaWindow01" tags="" position="366.6666666666667,1265">Double-click this passage to edit it.
+<tw-passagedata pid="34" name=" gmaWindow01" tags="" position="371.6666666666667,1265">(if: $weapon is &quot;staff&quot;)[
+You simply can&#39;t face your grandmother. A druidic oath binds you to abandon all family.
+
+So you to decide to sneak outside the window.
+
+Unfortunately your grandmother catches you climbing out the window
+
+&quot;(print: $epitaph)!&quot; she yells out to you.
+
+This family reunion of sorts is just enough for the magical oaths in place to stop your heart. Though it&#39;s little solace, you do at least issue your last breaths in the presence of your grandmother.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Royalty shouldn&#39;t have to face situations like this.
+
+You climb out your window. Only you forgot that you live at the top of a tower.
+
+It will never be said that you were smart Royalty. But you are definitely *dead* royalty.
+](else:)[
+You can&#39;t stand the thought of interrupting your lonely existence.
+
+You slip out the window into the blizzard.
+
+You make it about 30 feet before a bear comes at you through the blizzard. You only have enough time to blink at the bear before you are torn apart by the ferocious beast.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="35" name=" gmaWindow02" tags="" position="363.33333333333337,1396.6666666666667">Double-click this passage to edit it.
+<tw-passagedata pid="35" name=" gmaWindow02" tags="" position="363.33333333333337,1396.6666666666667">(if: $weapon is &quot;staff&quot;)[
+You stick your head out the window and tell grandma to go away.
+
+You even try to explain to her that you can&#39;t have contact with family or else you will die.
+
+&quot;Nonsense, (print: $epitaph).&quot; she says.
+
+You can only stare at her before the life drains out of your body as the magical oaths take their toll.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+You go to the window to yell at your traitor grandma to get out and leave the kingdom alone.
+
+As you prop yourself at the window you peer outside. Your grandmother is hanging below your window though.
+
+She grabs your neck and pulls you out the window high on your castle&#39;s tower. You plummet towards the earth.
+
+Your grandma yells at you as fall: &quot;(print: $epitaph)!&quot;
+](else:)[
+You move to the window to tell your grandmother to leave.
+
+As you stick your head out the window a massive bear, seemingly out of nowhere, swipes at your head and takes it clean off.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
 <tw-passagedata pid="36" name=" catReady01" tags="" position="778.3333333333334,1228.3333333333335">Double-click this passage to edit it.
 [[Continue | interludeFinal]] </tw-passagedata>
