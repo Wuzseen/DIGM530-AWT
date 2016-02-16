@@ -24,7 +24,15 @@
 
 
 
+
+
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">var epitaph = "Rosebud...";
+
+
+
+
 
 
 
@@ -45,7 +53,7 @@ A character is just about to utter their last words:
 <tw-passagedata pid="3" name=" finalWords" tags="" position="253,31">(set: $epitaph to (prompt: &quot;Their final words were:&quot;))
 
 (display: &quot;Intro&quot;)</tw-passagedata>
-<tw-passagedata pid="4" name=" wakeUp" tags="" position="443.33333333333337,156.66666666666669">You open your eyes, slowly. The phrase &quot;(print: $epitaph)&quot; seems burned into your mind.
+<tw-passagedata pid="4" name=" wakeUp" tags="" position="443,156">You open your eyes, slowly. The phrase &quot;(print: $epitaph)&quot; seems burned into your mind.
 
 What was that? What does (print: $epitaph) mean? You were certain you just died. Yet you remember virtually nothing. Not even where you are.
 
@@ -60,7 +68,7 @@ You firmly grasp what seems to be a handle. It seemingly restores your strength.
 [[Staff | staffRoom]]
 [[Longsword | swordRoom]]
 [[Crossbow | crossbowRoom]]</tw-passagedata>
-<tw-passagedata pid="5" name=" staffRoom" tags="" position="300,301.6666666666667">The world springs up around you. You and your trusty staff.
+<tw-passagedata pid="5" name=" staffRoom" tags="" position="300,301">The world springs up around you. You and your trusty staff.
 
 Suddenly details spring back to your mind. You were in your hut, practicing your magic spells. When... when, well--that&#39;s all you remember for now.
 
@@ -72,7 +80,7 @@ Your strength returns to you and clasp your staff to your chest.
 
 [[Continue | interlude01]]
 (set: $weapon to &quot;staff&quot;)</tw-passagedata>
-<tw-passagedata pid="6" name=" swordRoom" tags="" position="450,298.33333333333337">All around you the world falls into place. From the infinite void what is unquestionably castle stone begins to surround you.
+<tw-passagedata pid="6" name=" swordRoom" tags="" position="450,298">All around you the world falls into place. From the infinite void what is unquestionably castle stone begins to surround you.
 
 This place is familiar to you. Your royal chambers. And in your hand is the sword with which you liberated a kingdom.
 
@@ -80,7 +88,7 @@ The large cold room is accented only by a grand fireplace and a magnificent chan
 
 [[Continue | interlude01]]
 (set: $weapon to &quot;sword&quot;)</tw-passagedata>
-<tw-passagedata pid="7" name=" crossbowRoom" tags="" position="598.3333333333334,303.33333333333337">As your hand wraps around the familiar grip of your grossbow you slowly blink.
+<tw-passagedata pid="7" name=" crossbowRoom" tags="" position="598,303">As your hand wraps around the familiar grip of your grossbow you slowly blink.
 
 As your eyes open you find yourself in a changed landscape. You were a hunter.
 
@@ -106,7 +114,7 @@ All is not well for our developing character. A challenge confronts them:
 [[There is a knock on the door | knockBow ]]
 [[There is a growl outside | growlBow ]]
 ]</tw-passagedata>
-<tw-passagedata pid="9" name=" knockStaff " tags="" position="50,551.6666666666667">A series of knocks is heard on your hut&#39;s door.
+<tw-passagedata pid="9" name=" knockStaff " tags="" position="50,551">A series of knocks is heard on your hut&#39;s door.
 
 Strange, these woods are home only to a few creatures. None of which would typically knock. Growl, snarl, or purr perhaps--but never knock.
 
@@ -118,13 +126,17 @@ But what of &quot;(print: $epitaph)&quot; the phrase sticks out to you like a ba
 [[Open The Door | door01]]
 [[Peek Out Your Window | window01]]
 (set: $challenge to &quot;knock&quot;)</tw-passagedata>
-<tw-passagedata pid="10" name=" growlStaff " tags="" position="626,553">There&#39;s a growl outside your druidic hut.
+<tw-passagedata pid="10" name=" growlStaff " tags="" position="626,553">There&#39;s a terrifying growl outside your druidic hut.
 
-[[Hide Under the Bed | bed01]]
-[[Ready Your Weapon | ready01]]
+It could be virtually anything. Your fears run wild--it could be a humongous python, a hideous bandersnatch, or it could be a harmless kitten.
+
+And then there&#39;s the matter of whatever &quot;(print: $epitaph)&quot; means.
+
+[[Hide under the bed | bed01]]
+[[Ready your (print: $weapon) | ready01]]
 [[Scream for Help | scream01]]
 (set: $challenge to &quot;growl&quot;)</tw-passagedata>
-<tw-passagedata pid="11" name=" knockSword " tags="" position="178.33333333333334,551.6666666666667">The royal chambers are hardly ever disturbed. Your majesty is only bothered by events of utmost importance. Yet a knock is heard on your door all the same.
+<tw-passagedata pid="11" name=" knockSword " tags="" position="178,551">The royal chambers are hardly ever disturbed. Your majesty is only bothered by events of utmost importance. Yet a knock is heard on your door all the same.
 
 Impulsively you begin to rush towards the door but you remember the phrase lingering in your mind.
 
@@ -136,9 +148,16 @@ What to do?
 [[Open The Door | door01]]
 [[Peek Out Your Window | window01]]
 (set: $challenge to &quot;knock&quot;)</tw-passagedata>
-<tw-passagedata pid="12" name=" growlSword " tags="" position="770,558">Double-click this passage to edit it.
-[[Hide Under the Bed | bed01]]
-[[Ready Your Weapon | ready01]]
+<tw-passagedata pid="12" name=" growlSword " tags="" position="770,558">You hear a deep roaring growl outside your chamber.
+
+The last time this happened your grandmother had a dragon almost melt your face.
+
+In all honesty the only animal that should make it up to your tower is a cat but in your kingdom you never know.
+
+Not to mention &quot;(print: $epitaph)&quot; still makes no sense to you. 
+
+[[Hide under the bed | bed01]]
+[[Ready your (print: $weapon) | ready01]]
 [[Scream for Help | scream01]]
 (set: $challenge to &quot;growl&quot;)</tw-passagedata>
 <tw-passagedata pid="13" name=" knockBow " tags="" position="304,552">Time passes slowly as all you hear are the crackles of flames and the soft blowing wind outside.
@@ -151,12 +170,17 @@ Meanwhile, in the back of your mind, (print: $epitaph) remains a complete myster
 [[Open The Door | door01]]
 [[Peek Out Your Window | window01]]
 (set: $challenge to &quot;knock&quot;)</tw-passagedata>
-<tw-passagedata pid="14" name=" growlBow " tags="" position="904,555">Double-click this passage to edit it.
-[[Hide Under the Bed | bed01]]
-[[Ready Your Weapon | ready01]]
+<tw-passagedata pid="14" name=" growlBow " tags="" position="904,556">More comes rushing back. You chose to live here for the thrill of the hunt. A wild mountain with wild targets.
+
+You hear a growl outside. A deep, snarling growl. Unquestionably the growl is from a terrifying beastie.
+
+Was &quot;(print: $epitaph)&quot; a warning? Some sort of foresight? Maybe it would be best not to hunt this beast. But the thrill calls to you as you grip your crossbow tighter and tighter.
+
+[[Hide under the bed | bed01]]
+[[Ready your (print: $weapon) | ready01]]
 [[Scream for Help | scream01]]
 (set: $challenge to &quot;growl&quot;)</tw-passagedata>
-<tw-passagedata pid="15" name=" ignore01" tags="" position="53.00020000000001,700">(if: $weapon is &quot;staff&quot;)[
+<tw-passagedata pid="15" name=" ignore01" tags="" position="53,700">(if: $weapon is &quot;staff&quot;)[
 Out of fear you decide to let the knock go unanswered. Choosing instead to stay safely where you are clutching your trusty staff.
 ]
 (elseif: $weapon is &quot;sword&quot;)[
@@ -167,7 +191,7 @@ The life of seclusion is your only option. Even if there was another person out 
 
 [[Continue | interludeKnock]]
 (set: $action to &quot;ignore&quot;)</tw-passagedata>
-<tw-passagedata pid="16" name=" door01" tags="" position="178.0001,702">(if: $weapon is &quot;staff&quot;)[
+<tw-passagedata pid="16" name=" door01" tags="" position="178,702">(if: $weapon is &quot;staff&quot;)[
 A magic user has nothing to fear. Confidently you stride towards the door.
 ]
 (elseif: $weapon is &quot;sword&quot;)[
@@ -178,7 +202,7 @@ The thought of company excites you. Your extended hermitage is unnecessary. You 
 
 [[Continue | interludeKnock]]
 (set: $action to &quot;door&quot;)</tw-passagedata>
-<tw-passagedata pid="17" name=" window01" tags="" position="303.00019999999995,701.6666666666667">(if: $weapon is &quot;staff&quot;)[
+<tw-passagedata pid="17" name=" window01" tags="" position="303,701">(if: $weapon is &quot;staff&quot;)[
 You are curious, but not so curious to throw caution to the wind. You decide to peek out your window and begin to move towards the window.
 ]
 (elseif: $weapon is &quot;sword&quot;)[
@@ -190,16 +214,44 @@ You decide to sneak a glance outside your window.
 ]
 [[Continue | interludeKnock]]
 (set: $action to &quot;door&quot;)</tw-passagedata>
-<tw-passagedata pid="18" name=" bed01" tags="" position="626,703">Double-click this passage to edit it.
+<tw-passagedata pid="18" name=" bed01" tags="" position="622,704">(if: $weapon is &quot;staff&quot;)[
+Terrified of fighting and possibly harming a woodland creature you scramble underneath your bed.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+*Nope!* you think to yourself. As you scramble underneath yoru bed.
+]
+(else:)[
+No matter what awaits you, the best place to set an ambush is under the bed. You hide underneath your bed of furs.
+]
 [[Continue | interludeGrowl]]
 (set: $action to &quot;bed&quot;)</tw-passagedata>
-<tw-passagedata pid="19" name=" ready01" tags="" position="777,703">Double-click this passage to edit it.
+<tw-passagedata pid="19" name=" ready01" tags="" position="774,704">(if: $weapon is &quot;staff&quot;)[
+You clutch your staff in your hand. Battle-ready. Thinking of all manner of spells you might need to combat this most likely *deadly* foe.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Royalty doesn&#39;t back down. You grip your sword confidently in your hands. As you grip the sword you feel more alive than ever.
+]
+(else:)[
+No matter the beast. You and your crossbow can take down any target no matter how large.
+]
 [[Continue | interludeGrowl]]
 (set: $action to &quot;ready&quot;)</tw-passagedata>
-<tw-passagedata pid="20" name=" scream01" tags="" position="927,703">Double-click this passage to edit it.
+<tw-passagedata pid="20" name=" scream01" tags="" position="923,704">(if: $weapon is &quot;staff&quot;)[
+You let out a large bellowing scream. Letting the world know, and the monster outside, that you are absolutely terrified.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Your drop your sword clanking the ground.
+
+&quot;AhhhhahhahhhhhahhahahahhahahahAHHHHHHHHHH!!!!!&quot; you scream at the top of your lungs. Surely all your attendants will come rushing.
+]
+(else:)[
+You unleash a mighty battle-cry at the beast on the other side of your door.
+
+&quot;(print: $epitaph)!!!!!!&quot;
+]
 [[Continue | interludeGrowl]]
 (set: $action to &quot;scream&quot;)</tw-passagedata>
-<tw-passagedata pid="21" name=" interludeKnock" tags="" position="178.33333333333334,903.3333333333334">&#39;&#39;NARRATOR ONLY&#39;&#39;
+<tw-passagedata pid="21" name=" interludeKnock" tags="" position="178,903">&#39;&#39;NARRATOR ONLY&#39;&#39;
 
 The character&#39;s doom awaits them. The knock on the door was from none other than...
 
@@ -211,31 +263,165 @@ The character&#39;s doom awaits them. The source of the growl was none other tha
 
 [[A bear | bearAttack]]
 [[A cat... that SOUNDS like a bear | catAttack]]</tw-passagedata>
-<tw-passagedata pid="23" name=" bearAttack" tags="" position="1723.3333333333335,666.6666666666667">(if: $action is &quot;bed&quot;)[
-You hid under the bed.
+<tw-passagedata pid="23" name=" bearAttack" tags="" position="554,905">(if: $action is &quot;bed&quot;)[
+(if: $weapon is &quot;staff&quot;)[
+You dash under your bed. Your staff dropping to the floor. Hiding is the best option you think to yourself.
+
+The growls turn into snarls and all of the sudden your front door explodes into splinters. A massive bear comes lumbering into your hut.
+
+The bear stumbles and sniffs around the room. You realize why the bear is here. There&#39;s a giant pot of honey in your room.
+
+And it&#39;s right above your bed.
+
+The bear climbs on top of your bed which definitely can&#39;t take the weight. The bed and bear together fall on you hiding underneath the bed. Like the bed, you couldnn&#39;t bear the weight and you expire.
+
+But not quite before you utter &quot;(print: $epitaph)?&quot; Inquisitively once more.
 ]
-(elseif: $action is &quot;ready&quot;)[
-You peeked out the window.
+(elseif: $weapon is &quot;sword&quot;)[
+Whatever is on the other side of the door, screw fighting it! Luckily there&#39;s plenty of room underneath your bed to hide. You drop your sword and clamber underneath.
+
+The growls and snarls continue to grow. Before long your door explodes into splinters and a massive bear comes lumbering into your room.
+
+The bear lumbers around the room doing a good job in general at messing up the place. Before long the bear notices the chandelier above your bed.
+
+Before you can really react the bear has leapt on your bed to get at the chandelier. The bear is literally jumping on the bed and through that action jumping on your body.
+
+It&#39;s extremely painful, but not quite lethal. Then, suddenly, the chandelier falls from the ceiling. The bear dives away, the limber beast. Meanwhile all you can think to say is &quot;(print: $epitaph)&quot; right before you are impaled by all manners of chandelier shards.
 ]
 (else:)[
-You screamed like a madman.
-]</tw-passagedata>
-<tw-passagedata pid="24" name=" catAttack" tags="" position="776,1057">(if: $action is &quot;bed&quot;)[
-You hid under the bed.
+Underneath you&#39;re bed you&#39;re ready for the monster.
+
+Unless it&#39;s a bear of course. *Which it absolutely is*. Your front door explodes into splinters and a bear comes barreling into your room.
+
+The bear sees the other bear trophy above your bed and immediately in a rage moves to tear it down. Rampaging through the room you&#39;re little but collateral damage to the bear.
+
+As you scream in pain as your life slowly drains away from you you only say to yourself &quot;(print: $epitaph)&quot; never quite realizing its meaning.
+]
+]
+(elseif: $action is &quot;ready&quot;)[
+(if: $weapon is &quot;staff&quot;)[
+Your front door explodes.
+
+It&#39;s a massive grizzly bear.
+
+You barely have to time to react--&quot;(print: $epitaph)&quot; you say, almost instinctually.
+
+It&#39;s a teleport spell! The world around you crumbles back into a black void and before long is replaced by a cave.
+
+A bear cave.
+
+&quot;(print: $epitaph)&quot; teleports you to a *bear* cave.
+
+The bear family inside the bear cave makes immediate work of you before you can even think of another spell to say.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+You stand ready. You liberated a kingdom. You can fell any number of foul beasts.
+
+A mighty challenge blasts the door open before you. It&#39;s a bear.
+
+To your credit, you fight valiantly.
+
+But ultimately a bear is extremely difficult to win against. Even with a sword.
+
+You try your hardest even landing a strike or two. But eventually the bear wins.
+
+The bear *always* wins.
+]
+(else:)[
+Stupidly you decide to stand right in front of your door, pointing your crossbow at whatever comes through.
+
+The door explodes  right in your face as a bear launches into your home. The splintering wood makes it exceedingly difficult to avoid.
+
+The bear gets you, mauls you, and disposes of you.
+]
+]
+(else:)[
+(if: $weapon is &quot;staff&quot;)[
+You scream, terrified of whatever might come.
+
+Perhaps you should&#39;ve taken an action because a bear blasts apart your door and charges right at you.
+
+Frozen in terror you can do nothing as the bear mauls you to death.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+You scream at the top of your lungs hoping anyone can hear you in the castle.
+
+Your screams fall on bear ears though because a bear a comes crashing through your door.
+
+You have just enough time to put your hand around your sword. But not quite *enough* time to put your sword to any use as the bear grabs and crushes you.
+]
+(else:)[
+Your battle-cry is epic.
+
+&quot;(print: $epitaph)!&quot; you repeat.
+
+Whatever is on the other side quiets for a moment.
+
+*A moment*.
+
+Suddenly your door splinters open in an explosion of wood. A bear tumbles in through your door. Furious, cold, and hungry the bear charges at you.
+
+With your crossbow unloaded there is little you can do but accept your fate as this bear&#39;s next meal.
+]
+]
+
+[[You die | wakeUp]]</tw-passagedata>
+<tw-passagedata pid="24" name=" catAttack" tags="" position="774,1059">(if: $action is &quot;bed&quot;)[
+(if: $weapon is &quot;staff&quot;)[
+Suddenly a cat leaps through your window.
+
+While it could be harmless, many of the cats in the magical glade outside are actually quite deadly. In fact, some even sound like bears.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+A cat leaps into your chamber. You love cats, but you&#39;re still not sure what the growl was.
+]
+(else:)[
+A cat leaps in from the cold.
+
+No way a cat survied out there. But maybe one did and just wanted to be warm?
+
+Regardless, what was that growl.
+]
 [[Crawl Out Of The Bed | catCrawl01]]
 [[Stay Hidden Underneath The Bed | catCrawl02]]
 ]
 (elseif: $action is &quot;ready&quot;)[
-You peeked out the window.
+(if: $weapon is &quot;staff&quot;)[
+For minutes nothing else happens. You decide to cautiously open the door.
+
+On your step outside is naught but a cat.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Weapon in hand you cautiously approach your door. Battle ready you await whatever is on the other side.
+
+You suddenly fling your door open to be greeted by a cat before you.
+]
+(else:)[
+With one hand on your crossbow ready to fire your other reaches out to open your door.
+
+In front of you is a cat.
+]
 [[Put Your Weapon Down | catReady01]]
 [[Attack The Cat | catReady02]]
 ]
 (else:)[
-You screamed like a madman.
+(if: $weapon is &quot;staff&quot;)[
+You scream and scream and scream.
+
+Before long a cat bounces in through your window.
+
+Does this calm you down or terrify you more?
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Your royal scream was supposed to attract your servants. Instead, it attracted a cat which comes in through your window.
+]
+(else:)[
+Your battle-cry has never attracted a cat before, but that is exactly what bounces through the window.
+]
 [[Continue Screaming | catScream01]]
 [[&#39;Awwwwwwwwwwwwww&#39; | catScream02]]
 ]</tw-passagedata>
-<tw-passagedata pid="25" name=" hoodedFigure01" tags="" position="1346.6666666666667,898.3333333333334">(if: $action is &quot;ignore&quot;)[
+<tw-passagedata pid="25" name=" hoodedFigure01" tags="" position="376,904">(if: $action is &quot;ignore&quot;)[
 &quot;(print: $epitaph).&quot;
 
 What? That phrase! Whatever is on the other side is chanting it.
@@ -306,7 +492,7 @@ Your world slowly fades to black as you utter your last words:
 &lt;/p&gt;
 
 # [[You Die | wakeUp]]</tw-passagedata>
-<tw-passagedata pid="26" name=" grandma01" tags="" position="176.66666666666669,1058.3333333333335">A sweet and wise voice rings out to you.
+<tw-passagedata pid="26" name=" grandma01" tags="" position="176,1058">A sweet and wise voice rings out to you.
 
 &quot;(print: $epitaph)&quot;
 
@@ -353,13 +539,85 @@ While it is your grandmother, your seclusion should not be impeded. Would you sn
 [[Sneak out the window | gmaWindow01]]
 [[Yell out your window &quot;Go away Grandma!&quot; | gmaWindow02]]
 </tw-passagedata>
-<tw-passagedata pid="27" name=" catCrawl01" tags="" position="615,1223.3333333333335">Double-click this passage to edit it.
+<tw-passagedata pid="27" name=" catCrawl01" tags="" position="604,1257">(if: $weapon is &quot;staff&quot;)[
+You crawl out of your bed. It&#39;s a cute little kitty!
+
+But it&#39;s a kitty with a taste for flesh. The cat roars at you. It turns out that it was a cat that sounds like a bear.
+
+The cat bites into your neck the second you get near it.
+
+You bleed out slowly and painfully.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+The cat&#39;s presence coaxes you out of your bed.
+
+Immediately the cat leaps at you and gives you a small bite on your hand.
+
+While not instantly painful, the deed has been done. The cat delivered a poisonous payload. It must have been your traitorous grandmother!
+
+As the poison begins to take its toll and you can only wonder behind the meaning of &quot;(print: $epitaph)&quot;.
+]
+(else:)[
+You scramble out of your bed immediately. You recognize that this cat represents an incredible danger.
+
+But it&#39;s too late. Before your very eyes the cat transforms into a bear and mauls you to death.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="28" name=" catCrawl02" tags="" position="615,1358.3333333333335">Double-click this passage to edit it.
+<tw-passagedata pid="28" name=" catCrawl02" tags="" position="604,1392">(if: $weapon is &quot;staff&quot;)[
+You stay hidden underneath your bed. While a fan of cats, you simply can&#39;t trust that this isn&#39;t some trap.
+
+*There are cats with the strength of bears in these woods.*
+
+You stay hidden underneath your bed as the cat wanders around the room.
+
+Yet you should&#39;ve probably chosen a better hiding spot. It is a cat with the strength of a bear. As the cat finally makes its way to your hiding spot it finally spots you.
+
+It lumbers after you, letting out a mighty bear like roar. It&#39;s too late for you to get out of the way as the bear-cat removes you from existence.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Staying hidden seems smart at first. The cat doesn&#39;t *instantly* find you. But it does *eventually.*
+
+At some point during the cat&#39;s hunt you realized that it was sent by your traitorous grandmother. Instead of a dragon, this time she sent a cat.
+
+The cat simply walks up to you and bites you on the nose. The cat&#39;s teeth, having been coated in a lethal poison, pierce your skin and deliver the deadly poison.
+
+You slowly die where you lie.
+]
+(else:)[
+The cat made a terrible mistake coming in here.
+
+You stay underneath your bed taking aim at the cat.
+
+Just when you are about to shoot you are distracted though, your door explodes in a splinter of wood. A massive bear was also outside.
+
+The cat runs away in terror. Unfortunately you&#39;re stuck underneath your bed and can do nothing as the bear destroys you and your room.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="29" name=" catScream01" tags="" position="945,1225">Double-click this passage to edit it.
+<tw-passagedata pid="29" name=" catScream01" tags="" position="934,1259">(if: $weapon is &quot;staff&quot;)[
+You continue screaming. You know whatever this animal is, it&#39;s no mere cat.
+
+The screams annoy the animal who changes to reveal their true form. A monstrous bear-cat. The bear cat attacks you to cease your screaming.
+
+Frozen in terror you can do nothing as the bear tears you to pieces.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+You continue to scream for help. As your rule of this kingdom continue grew your paranoia over being assassinated only grew.
+
+You fear the cat was sent by your traitorous grandmother. And rightly so.
+
+Yet you should have done something other than scream. Unimpeded the cat leaps at you and bites you on your arm delivering a deadly poison.
+
+Very quickly the poison travels through your body. Paralyzing you (and stopping your screams!). Then the poison slowly drains the life from your body.
+]
+(else:)[
+You continue to unleash your mighty battle cry. The cat runs away in terror, hiding in a corner of your room. Afraid.
+
+Satisfied that the danger has passed you lower your weapon. And move towards the cat.
+
+Before your very eyes the cat transforms into a monstrous bear. Having lowered your weapon there is nothing to defend yourself with and the bear immediately attacks you.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="30" name=" gmaIgnore01" tags="" position="6.666666666666667,1255">(if: $weapon is &quot;staff&quot;)[
+<tw-passagedata pid="30" name=" gmaIgnore01" tags="" position="6,1255">(if: $weapon is &quot;staff&quot;)[
 GRANDMA!
 
 Then you remember, she *always* called you (print: $epitaph). That&#39;s where it came from.
@@ -388,7 +646,7 @@ As an ace hunter you should&#39;ve known about this species of grandma imitating
 Needless to say the bear mauls you to death.
 ]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="31" name=" gmaIgnore02" tags="" position="5,1386.6666666666667">(if: $weapon is &quot;staff&quot;)[
+<tw-passagedata pid="31" name=" gmaIgnore02" tags="" position="5,1386">(if: $weapon is &quot;staff&quot;)[
 No. It cannot be your grandmother.
 
 You stand ready. A wide variety of magic is at your fingertips and you are ready to go.
@@ -421,7 +679,7 @@ Curiously you lower your crossbow. Confused.
 Suddenly above you the ceiling bursts open. A massive bear falls from the infinite black void. The bear absolutely crushes you.
 ]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="32" name=" gmaDoor01" tags="" position="181.66666666666669,1260">(if: $weapon is &quot;staff&quot;)[
+<tw-passagedata pid="32" name=" gmaDoor01" tags="" position="181,1260">(if: $weapon is &quot;staff&quot;)[
 &quot;HI GRANDMA!!!&quot;
 
 You&#39;re so excited to see your grandmother standing there before you. She&#39;s absolutely beautiful.
@@ -442,7 +700,7 @@ You invite your grandmother in. You spend the evening trading stories and togeth
 It seems though in your haste to cook a large meal, you attract a wild bear which comes crashing into your hut. Destroying both you *and* your grandmother in the process.
 ]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="33" name=" gmaDoor02" tags="" position="183.33333333333334,1390">(if: $weapon is &quot;staff&quot;)[
+<tw-passagedata pid="33" name=" gmaDoor02" tags="" position="183,1390">(if: $weapon is &quot;staff&quot;)[
 Grandma stands before you in the frame of your door.
 
 But you know what you have to do. A druid can&#39;t break their oath. The must abandon all past family.
@@ -475,7 +733,7 @@ Your hunter instinct is to sacrifice your grandmother. You slam the door shut in
 This is actually mostly ineffective. The bear tears through your grandmother like tissue paper. Your hut and own body fare no better.
 ]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="34" name=" gmaWindow01" tags="" position="371.6666666666667,1265">(if: $weapon is &quot;staff&quot;)[
+<tw-passagedata pid="34" name=" gmaWindow01" tags="" position="371,1265">(if: $weapon is &quot;staff&quot;)[
 You simply can&#39;t face your grandmother. A druidic oath binds you to abandon all family.
 
 So you to decide to sneak outside the window.
@@ -500,7 +758,7 @@ You slip out the window into the blizzard.
 You make it about 30 feet before a bear comes at you through the blizzard. You only have enough time to blink at the bear before you are torn apart by the ferocious beast.
 ]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="35" name=" gmaWindow02" tags="" position="363.33333333333337,1396.6666666666667">(if: $weapon is &quot;staff&quot;)[
+<tw-passagedata pid="35" name=" gmaWindow02" tags="" position="363,1396">(if: $weapon is &quot;staff&quot;)[
 You stick your head out the window and tell grandma to go away.
 
 You even try to explain to her that you can&#39;t have contact with family or else you will die.
@@ -523,16 +781,108 @@ You move to the window to tell your grandmother to leave.
 As you stick your head out the window a massive bear, seemingly out of nowhere, swipes at your head and takes it clean off.
 ]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="36" name=" catReady01" tags="" position="778.3333333333334,1228.3333333333335">Double-click this passage to edit it.
+<tw-passagedata pid="36" name=" catReady01" tags="" position="767,1262">(if: $weapon is &quot;staff&quot;)[
+You lower your weapon. It&#39;s a harmless kitten? What&#39;s the worst that could happen.
+
+Well, the cat could have the strength of a bear for one thing.
+
+The cat wastes no time in capitalizing on your momentary pause. With the strength of a bear the cat rips you to shreds.
+
+Druids should be better with animals.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+You lower your weapon. Royalty would never kill a cat.
+
+In your moment of weakness the cat leaps at you though and bites you on the arm. 
+
+The mangy animal! You realize the cat must have been sent by your traitorous grandmother. Instead of a dragon, she sent poisonous cat.
+
+You can feel the poison seep into your veins. Unable to fight it, you slump to the ground and perish.
+]
+(else:)[
+A cat is not a suitable target for such a hunter.
+
+You lower your weapon, you simply couldn&#39;t bare it to harm a kitten.
+
+But, before your very eyes, the cat transforms. Into a bear.
+
+The angry creature is now before you in all its glory. Not a mere cat, but a bear-cat.
+
+The bear-cat launches itself at you and shreds you to death.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="37" name=" catReady02" tags="" position="776.6666666666667,1353.3333333333335">Double-click this passage to edit it.
+<tw-passagedata pid="37" name=" catReady02" tags="" position="765,1387">(if: $weapon is &quot;staff&quot;)[
+Taking no chances you unleash a spell, a ball of flame, at the cat.
+
+The cat deftly dodges your spell of fire.
+
+Now enraged, the cat reveals itself to you. A bear-cat--the cat transforms before your very eyes into a bear.
+
+This bear is now very angry at you and charges. You try your best to cast another spell with your staff but you simply aren&#39;t able as the bear gets a hold of you and tears you to pieces.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+You realize very quickly the cat was the source of the growl. You also realize that it was likely sent by your grandmother who betrayed you during the war.
+
+You charge the cat with you weapon. Yet the cat is nimble and easily dodges your attack. As you swing past the cat the animal is able to bite your ankle.
+
+You reel in pain. The cat&#39;s teeth were definitely spiked with something. Poison. It quickly travels throughout your body. Paralyzing you.
+
+Your sword clanks to the ground as the poison slowly takes your life from you.
+]
+(else:)[
+You immediately let your bolt fly out of your crossbow.
+
+The bolt pierces the kitten instantly killing the poor animal.
+
+You&#39;re mortified. A hunter should never kill an innocent animal. You decided immediately to hold a funeral service for the kitten.
+
+You grab a shovel and venture out into the blizzard. You dig a suitable grave for the animal. Upon your return for the cat&#39;s body it is nowhere to be seen. Perhaps more alarming though is the wreckage of your hut.
+
+It&#39;s been almost destroyed. Sitting in the middle of the wreckage is a bear. You realize what happened to the cat. Unfortunately you&#39;re next. You left your crossbow inside your now ruined home.
+
+The bear sees you almost instantly and barrels after you. You can only run so fast in the snow and the bear quickly catches up and destroys you.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="38" name=" interludeFinal" tags="" position="455,1681.6666666666667">Bears? Grandma? Assassins? Cats?
+<tw-passagedata pid="38" name=" interludeFinal" tags="" position="455,1681">Bears? Grandma? Assassins? Cats?
 
 It&#39;s not all what it seems.
 
-You&#39;re dead, yes. But is it really clear what (print: $epitaph) means?</tw-passagedata>
-<tw-passagedata pid="39" name=" catScream02" tags="" position="945,1356.6666666666667">Double-click this passage to edit it.
+You&#39;re dead, yes. But is it really clear what (print: $epitaph) means?
+
+[[You die | wakeUp]]</tw-passagedata>
+<tw-passagedata pid="39" name=" catScream02" tags="" position="934,1390">(if: $weapon is &quot;staff&quot;)[
+The site of the kitten entrances and calms you.
+
+Awwwwww. You move to pet the kitten. The kitten stands still until you get very close to the kitten.
+
+The kitten bounces away. You make chase after the kitten. The kitten just keeps running around your room.
+
+The kitten finds its way on a shelf high up in your room. You reach up to get the cat but the cat jumps off! The shelf falls as you try to climb up to it.
+
+You fall to the ground landing on your neck and shattering it. You get one last glimpse of the cat before you die.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Look at the cute you little kitten!
+
+You throw all your cares away. Your mind hearkens back to before you were royalty. Before you saved a kingdom from your traitorous grandmother. When the most important thing in the world to you was your childhood cat. Mittens
+
+Oh, mittens. The best friend you ever had.
+
+You try to coax the cat to letting you pet them. But like any proud cat, the cat wants nothing to do with you. Instead, the cat bites you and runs away.
+
+Upset you decide to lie down. After a couple moments you realize that you feel incredibly weak. You look at your bite and its turned an extremely strange color.
+
+You realize that the cat was most likely sent by your grandmother who knows of your affection for cats. Realizing that you&#39;ve been poisoned you can only think one last time about &quot;(print: $epitaph)&quot; before you die.
+]
+(else:)[
+The sight of the cat causes your gruff loner exterior to melt away. It&#39;s a cute little animal.
+
+You move to pet your new friend. But before your very eyes the cat transforms into a mighty bear!
+
+The bear immediately turns on you. *Why would a cat be on the top of a mountain during a blizzard?*
+
+Violently and mercilessly the bear tears you to shreds.
+]
 [[Continue | interludeFinal]] </tw-passagedata>
 </tw-storydata>
 
