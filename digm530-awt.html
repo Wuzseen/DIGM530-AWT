@@ -320,7 +320,8 @@ A druid has sworn off contact with their previous family. Yet to see your grandm
 ]
 (elseif: $weapon is &quot;sword&quot;)[
 Your traitorous grandmother almost swung your war of liberation in the wrong direction. Even if it were her, what would you say?
-](else:)[
+]
+(else:)[
 It&#39;s true what they say about hunters. They all have grandmothers.
 ]
 [[Open the door anyway | gmaIgnore01]]
@@ -332,13 +333,14 @@ Excitedly you race towards the door and fling it open! It&#39;s Grandma. Grandma
 ]
 (elseif: $weapon is &quot;sword&quot;)[
 Royalty must remain stalwart at all times. But your grandmother was a traitor during the war.
-](else:)[
+]
+(else:)[
 Yes. It actually *is* your grandmother.
 ]
 [[Say Hello to Grandma | gmaDoor01]]
 [[Shut the door in Grandma&#39;s face | gmaDoor02]]
 ]
-(else:)
+(else:)[
 (if: $weapon is &quot;staff&quot;)[
 You see her. Your grandmother. You could sneak up on her to say hello. Or maybe pull a trick on her and tell her to go away only to ambush her with a love spell!
 ]
@@ -347,9 +349,10 @@ Your grandmother was a traitor during the war of liberation. Her actions still l
 ](else:)[
 While it is your grandmother, your seclusion should not be impeded. Would you sneak away or insist that your own grandmother leave?
 ]
+]
 [[Sneak out the window | gmaWindow01]]
-[[Yell at grandma to go away out of your window | gmaWindow02]]
-]</tw-passagedata>
+[[Yell out your window &quot;Go away Grandma!&quot; | gmaWindow02]]
+</tw-passagedata>
 <tw-passagedata pid="27" name=" catCrawl01" tags="" position="615,1223.3333333333335">Double-click this passage to edit it.
 [[Continue | interludeFinal]] </tw-passagedata>
 <tw-passagedata pid="28" name=" catCrawl02" tags="" position="615,1358.3333333333335">Double-click this passage to edit it.
@@ -524,7 +527,11 @@ As you stick your head out the window a massive bear, seemingly out of nowhere, 
 [[Continue | interludeFinal]] </tw-passagedata>
 <tw-passagedata pid="37" name=" catReady02" tags="" position="776.6666666666667,1353.3333333333335">Double-click this passage to edit it.
 [[Continue | interludeFinal]] </tw-passagedata>
-<tw-passagedata pid="38" name=" interludeFinal" tags="" position="455,1681.6666666666667">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="38" name=" interludeFinal" tags="" position="455,1681.6666666666667">Bears? Grandma? Assassins? Cats?
+
+It&#39;s not all what it seems.
+
+You&#39;re dead, yes. But is it really clear what (print: $epitaph) means?</tw-passagedata>
 <tw-passagedata pid="39" name=" catScream02" tags="" position="945,1356.6666666666667">Double-click this passage to edit it.
 [[Continue | interludeFinal]] </tw-passagedata>
 </tw-storydata>
