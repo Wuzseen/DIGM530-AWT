@@ -45,7 +45,7 @@ A character is just about to utter their last words:
 <tw-passagedata pid="3" name=" finalWords" tags="" position="253,31">(set: $epitaph to (prompt: &quot;Their final words were:&quot;))
 
 (display: &quot;Intro&quot;)</tw-passagedata>
-<tw-passagedata pid="4" name=" wakeUp" tags="" position="445,157">You open your eyes, slowly. The phrase &quot;(print: $epitaph)&quot; seems burned into your mind.
+<tw-passagedata pid="4" name=" wakeUp" tags="" position="443.33333333333337,156.66666666666669">You open your eyes, slowly. The phrase &quot;(print: $epitaph)&quot; seems burned into your mind.
 
 What was that? What does (print: $epitaph) mean? You were certain you just died. Yet you remember virtually nothing. Not even where you are.
 
@@ -60,8 +60,7 @@ You firmly grasp what seems to be a handle. It seemingly restores your strength.
 [[Staff | staffRoom]]
 [[Longsword | swordRoom]]
 [[Crossbow | crossbowRoom]]</tw-passagedata>
-<tw-passagedata pid="5" name=" staffRoom" tags="" position="300,303">(set: $weapon to &quot;staff&quot;)
-The world springs up around you. You and your trusty staff.
+<tw-passagedata pid="5" name=" staffRoom" tags="" position="300,301.6666666666667">The world springs up around you. You and your trusty staff.
 
 Suddenly details spring back to your mind. You were in your hut, practicing your magic spells. When... when, well--that&#39;s all you remember for now.
 
@@ -71,14 +70,26 @@ Beyond your hut a magical glade forms seeping with magic and teeming with all so
 
 Your strength returns to you and clasp your staff to your chest.
 
-[[Continue | interlude01]]</tw-passagedata>
-<tw-passagedata pid="6" name=" swordRoom" tags="" position="447,299">(set: $weapon to &quot;sword&quot;)
+[[Continue | interlude01]]
+(set: $weapon to &quot;staff&quot;)</tw-passagedata>
+<tw-passagedata pid="6" name=" swordRoom" tags="" position="450,298.33333333333337">All around you the world falls into place. From the infinite void what is unquestionably castle stone begins to surround you.
 
-[[Continue | interlude01]]</tw-passagedata>
-<tw-passagedata pid="7" name=" crossbowRoom" tags="" position="603,302">(set: $weapon to &quot;bow&quot;)
+This place is familiar to you. Your royal chambers. And in your hand is the sword with which you liberated a kingdom.
 
+The large cold room is accented only by a grand fireplace and a magnificent chandeleir hanging above your bed. Many details in the room still fall endlessly into a black void. Though where the cold castle ends and the black void begins is anyone&#39;s guess.
 
-[[Continue | interlude01]]</tw-passagedata>
+[[Continue | interlude01]]
+(set: $weapon to &quot;sword&quot;)</tw-passagedata>
+<tw-passagedata pid="7" name=" crossbowRoom" tags="" position="598.3333333333334,303.33333333333337">As your hand wraps around the familiar grip of your grossbow you slowly blink.
+
+As your eyes open you find yourself in a changed landscape. You were a hunter.
+
+Adorned around the room are trophies from your various escapades. Above your bed is the frame of a mighty bear.
+
+A roaring fire is ablaze in a pit in the middle of the room. A window to peer outside is visible and a roaring blizzard is seen outside.
+
+[[Continue | interlude01]]
+(set: $weapon to &quot;bow&quot;)</tw-passagedata>
 <tw-passagedata pid="8" name=" interlude01" tags="" position="447,429">&#39;&#39;NARRATOR ONLY&#39;&#39;
 
 All is not well for our developing character. A challenge confronts them:
@@ -95,7 +106,13 @@ All is not well for our developing character. A challenge confronts them:
 [[There is a knock on the door | knockBow ]]
 [[There is a growl outside | growlBow ]]
 ]</tw-passagedata>
-<tw-passagedata pid="9" name=" knockStaff " tags="" position="50,553">Double-click this passage to edit it.
+<tw-passagedata pid="9" name=" knockStaff " tags="" position="50,551.6666666666667">A series of knocks is heard on your hut&#39;s door.
+
+Strange, these woods are home only to a few creatures. None of which would typically knock. Growl, snarl, or purr perhaps--but never knock.
+
+You grip your staff, knowing that should the worst happen you can cast a spell to save yourself.
+
+But what of &quot;(print: $epitaph)&quot; the phrase sticks out to you like a bad omen. Surely these knocks are a bad sign.
 
 [[Ignore The Knock | ignore01]]
 [[Open The Door | door01]]
@@ -107,7 +124,13 @@ All is not well for our developing character. A challenge confronts them:
 [[Ready Your Weapon | ready01]]
 [[Scream for Help | scream01]]
 (set: $challenge to &quot;growl&quot;)</tw-passagedata>
-<tw-passagedata pid="11" name=" knockSword " tags="" position="179,554">Double-click this passage to edit it.
+<tw-passagedata pid="11" name=" knockSword " tags="" position="178.33333333333334,551.6666666666667">The royal chambers are hardly ever disturbed. Your majesty is only bothered by events of utmost importance. Yet a knock is heard on your door all the same.
+
+Impulsively you begin to rush towards the door but you remember the phrase lingering in your mind.
+
+(print: $epitaph)
+
+What to do?
 
 [[Ignore The Knock | ignore01]]
 [[Open The Door | door01]]
@@ -118,7 +141,12 @@ All is not well for our developing character. A challenge confronts them:
 [[Ready Your Weapon | ready01]]
 [[Scream for Help | scream01]]
 (set: $challenge to &quot;growl&quot;)</tw-passagedata>
-<tw-passagedata pid="13" name=" knockBow " tags="" position="304,552">Double-click this passage to edit it.
+<tw-passagedata pid="13" name=" knockBow " tags="" position="304,552">Time passes slowly as all you hear are the crackles of flames and the soft blowing wind outside.
+
+A set of knocks suddenly pierces the serenity. Who, or what, could be knocking on your door. A secluded hunter knows only a few select friends.
+
+Meanwhile, in the back of your mind, (print: $epitaph) remains a complete mystery. Why is this phrase so important? Why do you think you are dead?
+
 [[Ignore The Knock | ignore01]]
 [[Open The Door | door01]]
 [[Peek Out Your Window | window01]]
@@ -128,26 +156,50 @@ All is not well for our developing character. A challenge confronts them:
 [[Ready Your Weapon | ready01]]
 [[Scream for Help | scream01]]
 (set: $challenge to &quot;growl&quot;)</tw-passagedata>
-<tw-passagedata pid="15" name=" ignore01" tags="" position="49,702">Double-click this passage to edit it.
+<tw-passagedata pid="15" name=" ignore01" tags="" position="53.00020000000001,700">(if: $weapon is &quot;staff&quot;)[
+Out of fear you decide to let the knock go unanswered. Choosing instead to stay safely where you are clutching your trusty staff.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Royalty such as yourself should not be bothered by anything. If it is really so important the knocks will happen again.
+](else:)[
+The life of seclusion is your only option. Even if there was another person out there in this blizzard, you would allow them to freeze in the cold to continue your hermitage.
+]
 
 [[Continue | interludeKnock]]
-(set: $action is &quot;ignore&quot;)</tw-passagedata>
-<tw-passagedata pid="16" name=" door01" tags="" position="178.0001,702">Double-click this passage to edit it.
+(set: $action to &quot;ignore&quot;)</tw-passagedata>
+<tw-passagedata pid="16" name=" door01" tags="" position="178.0001,702">(if: $weapon is &quot;staff&quot;)[
+A magic user has nothing to fear. Confidently you stride towards the door.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+As decisively as you saved your kingdom you sheathe your sword and head towards the door.
+](else:)[
+The thought of company excites you. Your extended hermitage is unnecessary. You step away from the crackling embers of your fire and move towards the door.
+]
+
 [[Continue | interludeKnock]]
-(set: $action is &quot;door&quot;)</tw-passagedata>
-<tw-passagedata pid="17" name=" window01" tags="" position="303,703">Double-click this passage to edit it.
+(set: $action to &quot;door&quot;)</tw-passagedata>
+<tw-passagedata pid="17" name=" window01" tags="" position="303.00019999999995,701.6666666666667">(if: $weapon is &quot;staff&quot;)[
+You are curious, but not so curious to throw caution to the wind. You decide to peek out your window and begin to move towards the window.
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Perhaps it&#39;s paranoia, but you are compelled to peer outside your window first.
+](else:)[
+What in the blazes could be outside?
+
+You decide to sneak a glance outside your window.
+]
 [[Continue | interludeKnock]]
-(set: $action is &quot;door&quot;)</tw-passagedata>
+(set: $action to &quot;door&quot;)</tw-passagedata>
 <tw-passagedata pid="18" name=" bed01" tags="" position="626,703">Double-click this passage to edit it.
 [[Continue | interludeGrowl]]
-(set: $action is &quot;bed&quot;)</tw-passagedata>
+(set: $action to &quot;bed&quot;)</tw-passagedata>
 <tw-passagedata pid="19" name=" ready01" tags="" position="777,703">Double-click this passage to edit it.
 [[Continue | interludeGrowl]]
-(set: $action is &quot;ready&quot;)</tw-passagedata>
+(set: $action to &quot;ready&quot;)</tw-passagedata>
 <tw-passagedata pid="20" name=" scream01" tags="" position="927,703">Double-click this passage to edit it.
 [[Continue | interludeGrowl]]
-(set: $action is &quot;scream&quot;)</tw-passagedata>
-<tw-passagedata pid="21" name=" interludeKnock" tags="" position="178,905">&#39;&#39;NARRATOR ONLY&#39;&#39;
+(set: $action to &quot;scream&quot;)</tw-passagedata>
+<tw-passagedata pid="21" name=" interludeKnock" tags="" position="178.33333333333334,903.3333333333334">&#39;&#39;NARRATOR ONLY&#39;&#39;
 
 The character&#39;s doom awaits them. The knock on the door was from none other than...
 
@@ -159,7 +211,7 @@ The character&#39;s doom awaits them. The source of the growl was none other tha
 
 [[A bear | bearAttack]]
 [[A cat... that SOUNDS like a bear | catAttack]]</tw-passagedata>
-<tw-passagedata pid="23" name=" bearAttack" tags="" position="1667,772">(if: $action is &quot;bed&quot;)[
+<tw-passagedata pid="23" name=" bearAttack" tags="" position="1723.3333333333335,666.6666666666667">(if: $action is &quot;bed&quot;)[
 You hid under the bed.
 ]
 (elseif: $action is &quot;ready&quot;)[
@@ -183,29 +235,118 @@ You screamed like a madman.
 [[Continue Screaming | catScream01]]
 [[&#39;Awwwwwwwwwwwwww&#39; | catScream02]]
 ]</tw-passagedata>
-<tw-passagedata pid="25" name=" hoodedFigure01" tags="" position="1265,770">(if: $action is &quot;ignore&quot;)[
-You ignore the knock
+<tw-passagedata pid="25" name=" hoodedFigure01" tags="" position="1346.6666666666667,898.3333333333334">(if: $action is &quot;ignore&quot;)[
+&quot;(print: $epitaph).&quot;
+
+What? That phrase! Whatever is on the other side is chanting it.
+
+&quot;(print: $epitaph)!!!!!!!!!&quot;
+
+Louder.
+
+&quot;(print: $epitaph)!!!!!!!!!&quot;
+
+Louder still.
+
+*(print: $epitaph)*?
+
+The door, as if by magic, seemingly disintigrates. Before you stands a tall hooded figure. Menacing and wraith like.
+
+The figure slowly glides towards you. As he does the environment around you melts into darkness once more.
+
+After but a moment all that remains is the figure who slowly removes their hood.
+
+Beneath the hood is naught by a singular white light which slowly consumes your entire being.
 ]
 (elseif: $action is &quot;door&quot;)[
-You open the door
+You lay your (print: $weapon) on the ground. The knock is calling to you. Wanting to take you home.
+
+You trust it implicitly--not even knowing what&#39;s on the other side. It&#39;s curiously natural to you.
+
+Your hand reaches for the door but before you can open the door the knob twists and the door opens on its own. There is nothing in front of you but the black void.
+
+Your feeling of trust is immediately lost and you turn to grab your (print: $weapon). Yet it&#39;s not there. The entire room has once again faded into blackness entirely.
+
+&quot;(print: $epitaph)&quot;
+
+A voice reaches out to you through the darkness. Repeating (print: $epitaph) repeatedly.
+
+Before long you are repeating (print: $epitaph) along with the voice in the darkness.
+
+And then, suddenly the voice stops but you can&#39;t stop saying (print: $epitaph).
+
+Over and over again you say the phrase.
 ]
 (else:)[
-You peek out the window
-]</tw-passagedata>
-<tw-passagedata pid="26" name=" grandma01" tags="" position="178,1061">You hear your grandmother call out.
+Not knowing what to expect you peer out the window in the room. The black void peers back.
+
+The door to your room opens with a bang. Out of the corner of your eye you catch a black blur.
+
+You jump back from the window and look for your (print: $weapon). It&#39;s nowhere to be found.
+
+(if: $weapon is &quot;staff&quot;)[
+Suddenly you begin to rise off the ground.
+
+&quot;(print: $epitaph)&quot;.
+
+You hear the phrase and remember--it&#39;s a levitation spell.
+
+You try to fight against the magic and as you struggle you catch sight of a black hooded figure using your trusty staff.
+
+Suddenly your room disappears from sight and you return to the black void still rising infinitely through empty space. The  hooded figure is still visible far beneath you. Instead of black though, they seem to be replaced with a blazign white light.
+
+Suddenly you stop rising and begin to fall through the air.
+]
+]
+
+Your world slowly fades to black as you utter your last words:
+&lt;br&gt;
+&lt;p&gt;
+(print: &quot;...&quot; + $epitaph)
+&lt;/p&gt;
+
+# [[You Die | wakeUp]]</tw-passagedata>
+<tw-passagedata pid="26" name=" grandma01" tags="" position="176.66666666666669,1058.3333333333335">A sweet and wise voice rings out to you.
+
+&quot;(print: $epitaph)&quot;
+
+There it is! That phrase that has occupied you so. Spoken by... yes, none other than your very own grandmother. How she has gotten here is beyond you.
+
+Perhaps it is not what it seems.
 
 (if: $action is &quot;ignore&quot;)[
-You ignored the knock.
+(if: $weapon is &quot;staff&quot;)[
+A druid has sworn off contact with their previous family. Yet to see your grandmother once again?
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Your traitorous grandmother almost swung your war of liberation in the wrong direction. Even if it were her, what would you say?
+](else:)[
+It&#39;s true what they say about hunters. They all have grandmothers.
+]
 [[Open the door anyway | gmaIgnore01]]
-[[Clutch your weapon and prepare to ambush the impostor | gmaIgnore02]]
+[[Clutch your (print: $weapon) and prepare to ambush the impostor | gmaIgnore02]]
 ]
 (elseif: $action is &quot;door&quot;)[
-You open the door.
+(if: $weapon is &quot;staff&quot;)[
+Excitedly you race towards the door and fling it open! It&#39;s Grandma. Grandma is here!
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Royalty must remain stalwart at all times. But your grandmother was a traitor during the war.
+](else:)[
+Yes. It actually *is* your grandmother.
+]
 [[Say Hello to Grandma | gmaDoor01]]
 [[Shut the door in Grandma&#39;s face | gmaDoor02]]
 ]
-(else:)[
-You peek out the window
+(else:)
+(if: $weapon is &quot;staff&quot;)[
+You see her. Your grandmother. You could sneak up on her to say hello. Or maybe pull a trick on her and tell her to go away only to ambush her with a love spell!
+]
+(elseif: $weapon is &quot;sword&quot;)[
+Your grandmother was a traitor during the war of liberation. Her actions still lay heavy on your mind to this day. Would you confront the woman or sneak out during the night?
+](else:)[
+While it is your grandmother, your seclusion should not be impeded. Would you sneak away or insist that your own grandmother leave?
+]
 [[Sneak out the window | gmaWindow01]]
 [[Yell at grandma to go away out of your window | gmaWindow02]]
 ]</tw-passagedata>
