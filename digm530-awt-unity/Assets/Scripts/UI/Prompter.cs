@@ -21,7 +21,6 @@ public class Prompter : MonoBehaviour {
 	void Awake()
 	{
 		prompterChoices = new List<GameObject>();
-		MakePrompt(new StoryPrompt());
 	}
 
 	void CreateChoices(StoryPrompt prompt)
@@ -34,6 +33,8 @@ public class Prompter : MonoBehaviour {
 		{
 			GameObject prompterPrefabInstance = Instantiate(PrompterChoicePrefab);
 			prompterPrefabInstance.transform.SetParent(choiceRoot,false);
+			PrompterChoice pc = prompterPrefabInstance.GetComponent<PrompterChoice>();
+			pc.AssignStoryChoice(choice);
 		}
 	}
 

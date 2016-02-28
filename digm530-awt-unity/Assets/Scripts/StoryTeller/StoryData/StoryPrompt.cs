@@ -21,7 +21,6 @@ public class StoryPrompt
 		this.NarratorOnly = false;
 		this.PrefabToSpawn = null;
 		this.Choices = new List<StoryChoice>();
-		this.Choices.Add(new StoryChoice());
 	}
 
 	public bool SpawnPrefab()

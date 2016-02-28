@@ -16,7 +16,6 @@ public class Story
 		this.Title = "Default Story";
 		this.Prompts = new List<StoryPrompt>();
 		this.FirstPromptName = "DefaultPrompt";
-		this.Prompts.Add(new StoryPrompt());
 	}
 
 	public StoryPrompt LookupPrompt(string promptName)

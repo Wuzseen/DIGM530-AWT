@@ -8,20 +8,38 @@ public class StoryTeller : MonoBehaviour
 {
 	private static readonly fsSerializer _serializer = new fsSerializer();
 
+	public Prompter prompter;
+
 	public string StoryPath = "DefaultStory.json";
+
+	private Story story;
+
+	public static StoryTeller Instance;
 	// Use this for initialization
-	void Start () {
-		Story s = new Story();
-		string storyJson = Serialize(typeof(Story), s);
-		File.WriteAllText(StoryPath, storyJson);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	void Awake()
+	{
+		if(Instance != null)
+		{
+			Destroy(this.gameObject);
+			return;
+		}
+		Instance = this;
 	}
 
-	public static string Serialize(Type type, object value) {
+	void Start () 
+	{
+		string json = File.ReadAllText(StoryPath);
+		this.story = Deserialize(typeof(Story), json) as Story;
+		this.prompter.MakePrompt(this.story.LookupPrompt(story.FirstPromptName));
+	}
+
+	public void ChoiceSelected(StoryChoice choice)
+	{
+		this.prompter.MakePrompt(story.LookupPrompt(choice.TargetPrompt));
+	}
+
+	public static string Serialize(Type type, object value) 
+	{
 		// serialize the data
 		fsData data;
 		_serializer.TrySerialize(type, value, out data).AssertSuccessWithoutWarnings();
@@ -30,7 +48,8 @@ public class StoryTeller : MonoBehaviour
 		return fsJsonPrinter.PrettyJson(data);
 	}
 
-	public static object Deserialize(Type type, string serializedState) {
+	public static object Deserialize(Type type, string serializedState) 
+	{
 		// step 1: parse the JSON data
 		fsData data = fsJsonParser.Parse(serializedState);
 

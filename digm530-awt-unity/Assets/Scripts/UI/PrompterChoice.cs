@@ -13,4 +13,9 @@ public class PrompterChoice : MonoBehaviour {
 		this.choice = targetChoice;
 		this.text.text = targetChoice.Text;
 	}
+
+	public void OnPress()
+	{
+		StoryTeller.Instance.ChoiceSelected(choice);
+	}
 }

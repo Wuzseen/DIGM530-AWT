@@ -2,17 +2,33 @@
     "Title": "Default Story",
     "Prompts": [
         {
-            "Name": "DefaultPromptName",
+            "Name": "DefaultPrompt",
             "Prompt": "This is a default prompt. Wow!",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
             "Choices": [
                 {
                     "Text": "A choice",
+                    "TargetPrompt": "DefaultPrompt2"
+                }
+            ]
+        },
+        {
+            "Name": "DefaultPrompt2",
+            "Prompt": "This is a default prompt, but different. Wow!",
+            "NarratorOnly": false,
+            "PrefabToSpawn": null,
+            "Choices": [
+                {
+                    "Text": "A different choice",
+                    "TargetPrompt": "DefaultPrompt"
+                },
+                {
+                    "Text": "Choice 2",
                     "TargetPrompt": "DefaultPrompt"
                 }
             ]
-        }
+        },
     ],
     "FirstPromptName": "DefaultPrompt"
 }
