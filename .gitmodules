@@ -1,0 +1,3 @@
+[submodule "fullserializer"]
+	path = fullserializer
+	url = https://github.com/jacobdufault/fullserializer.git
