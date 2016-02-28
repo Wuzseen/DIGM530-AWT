@@ -5,6 +5,7 @@
             "Name": "DefaultPromptName",
             "Prompt": "This is a default prompt. Wow!",
             "NarratorOnly": false,
+            "PrefabToSpawn": null,
             "Choices": [
                 {
                     "Text": "A choice",

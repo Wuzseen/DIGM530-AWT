@@ -10,6 +10,8 @@ public class StoryPrompt
 
 	public bool NarratorOnly { get; set; }
 
+	public string PrefabToSpawn { get; set; }
+
 	public List<StoryChoice> Choices { get; set; }
 
 	public StoryPrompt() 
@@ -17,7 +19,13 @@ public class StoryPrompt
 		this.Name = "DefaultPromptName";
 		this.Prompt = "This is a default prompt. Wow!";
 		this.NarratorOnly = false;
+		this.PrefabToSpawn = null;
 		this.Choices = new List<StoryChoice>();
 		this.Choices.Add(new StoryChoice());
+	}
+
+	public bool SpawnPrefab()
+	{
+		return PrefabToSpawn != null;
 	}
 }
