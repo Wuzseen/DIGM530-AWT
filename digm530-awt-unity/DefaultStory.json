@@ -1,0 +1,17 @@
+{
+    "Title": "Default Story",
+    "Prompts": [
+        {
+            "Name": "DefaultPromptName",
+            "Prompt": "This is a default prompt. Wow!",
+            "NarratorOnly": false,
+            "Choices": [
+                {
+                    "Text": "A choice",
+                    "TargetPrompt": "DefaultPrompt"
+                }
+            ]
+        }
+    ],
+    "FirstPromptName": "DefaultPrompt"
+}
