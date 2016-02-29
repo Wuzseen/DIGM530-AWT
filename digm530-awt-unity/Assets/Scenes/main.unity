@@ -194,7 +194,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11467166, guid: 8c21605c54ebb43afbcb6047e8309289, type: 2}
       propertyPath: browserStartMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11485360, guid: 8c21605c54ebb43afbcb6047e8309289, type: 2}
       propertyPath: prompter
