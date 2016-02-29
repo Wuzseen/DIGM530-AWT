@@ -13,18 +13,21 @@ public class Prompter : MonoBehaviour {
 
 	public GameObject PrompterChoicePrefab;
 
-	private List<GameObject> prompterChoices;
+	public GameObject fateAwaits;
+
+	private List<PrompterChoice> prompterChoices;
 
 	public UnityEvent onPromptStart;
 	public UnityEvent onPromptEnd;
 
 	void Awake()
 	{
-		prompterChoices = new List<GameObject>();
+		prompterChoices = new List<PrompterChoice>();
 	}
 
 	void CreateChoices(StoryPrompt prompt)
 	{
+		prompterChoices = new List<PrompterChoice>();
 		foreach(Transform choice in choiceRoot) 
 		{
 			Destroy(choice.gameObject);
@@ -35,29 +38,47 @@ public class Prompter : MonoBehaviour {
 			prompterPrefabInstance.transform.SetParent(choiceRoot,false);
 			PrompterChoice pc = prompterPrefabInstance.GetComponent<PrompterChoice>();
 			pc.AssignStoryChoice(choice);
+			prompterChoices.Add(pc);
 		}
 	}
 
 	public void MakePrompt(StoryPrompt prompt)
 	{
 		StartCoroutine(DoPrompt(prompt));
-		CreateChoices(prompt);
+	}
+
+	public void SelectChoiceByIndex(int index) 
+	{
+		PrompterChoice choiceFab = prompterChoices[index];
+		choiceFab.OnPress();
 	}
 
 	IEnumerator DoPrompt(StoryPrompt prompt)
 	{
-		string PromptText = prompt.Prompt;
+		
 		onPromptStart.Invoke();
-		float duration = PromptText.Length * TimePerLetter;
+		CreateChoices(prompt);
 
-		int promptLength = 0;
-		while(promptLength < PromptText.Length - 1)
+		if(prompt.NarratorOnly) 
 		{
-			promptField.text = PromptText.Substring(0, promptLength);
-			promptLength++;
-			yield return new WaitForSeconds(TimePerLetter);
+			fateAwaits.SetActive(true);
 		}
-		promptField.text = PromptText;
+		else
+		{
+			fateAwaits.SetActive(false);
+			string PromptText = prompt.Prompt;
+			float duration = PromptText.Length * TimePerLetter;
+
+			int promptLength = 0;
+			while(promptLength < PromptText.Length - 1)
+			{
+				promptField.text = PromptText.Substring(0, promptLength);
+				promptLength++;
+				yield return new WaitForSeconds(TimePerLetter);
+			}
+			promptField.text = PromptText;
+		}
+
 		onPromptEnd.Invoke();
 	}
 }

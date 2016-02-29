@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using FullSerializer;
 using System.IO;
 using NDream.AirConsole;
@@ -20,6 +21,8 @@ public class StoryTeller : MonoBehaviour
 	private Story story;
 
 	public static StoryTeller Instance;
+
+	public List<StoryChoice> choices;
 
 	private bool begun = false;
 	// Use this for initialization
@@ -52,6 +55,11 @@ public class StoryTeller : MonoBehaviour
 		StoryPrompt firstPrompt = this.story.LookupPrompt(story.FirstPromptName);
 		this.prompter.MakePrompt(firstPrompt);
 		consoleReceiver.SendPrompt(firstPrompt);
+	}
+
+	public void NarratorChoice()
+	{
+
 	}
 
 	public void ChoiceSelected(StoryChoice choice)
