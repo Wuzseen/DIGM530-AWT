@@ -3,10 +3,15 @@ using System;
 using System.Collections;
 using FullSerializer;
 using System.IO;
+using NDream.AirConsole;
+using Newtonsoft.Json.Linq;
 
 public class StoryTeller : MonoBehaviour 
 {
+	public GameObject loadScreen;
 	private static readonly fsSerializer _serializer = new fsSerializer();
+
+	public AirConsoleReceiver consoleReceiver;
 
 	public Prompter prompter;
 
@@ -15,6 +20,8 @@ public class StoryTeller : MonoBehaviour
 	private Story story;
 
 	public static StoryTeller Instance;
+
+	private bool begun = false;
 	// Use this for initialization
 	void Awake()
 	{
@@ -24,18 +31,34 @@ public class StoryTeller : MonoBehaviour
 			return;
 		}
 		Instance = this;
+		AirConsole.instance.onConnect += AirConsole_instance_onConnect;
 	}
 
-	void Start () 
+	void OnDestroy()
 	{
+		AirConsole.instance.onConnect -= AirConsole_instance_onConnect;
+	}
+
+	void AirConsole_instance_onConnect(int device_id)
+	{
+		if(begun) 
+		{
+			return;
+		}
+		loadScreen.SetActive(false);
+		begun = true;
 		string json = File.ReadAllText(StoryPath);
 		this.story = Deserialize(typeof(Story), json) as Story;
-		this.prompter.MakePrompt(this.story.LookupPrompt(story.FirstPromptName));
+		StoryPrompt firstPrompt = this.story.LookupPrompt(story.FirstPromptName);
+		this.prompter.MakePrompt(firstPrompt);
+		consoleReceiver.SendPrompt(firstPrompt);
 	}
 
 	public void ChoiceSelected(StoryChoice choice)
 	{
-		this.prompter.MakePrompt(story.LookupPrompt(choice.TargetPrompt));
+		StoryPrompt targetPrompt = story.LookupPrompt(choice.TargetPrompt);
+		this.prompter.MakePrompt(targetPrompt);
+		consoleReceiver.SendPrompt(targetPrompt);
 	}
 
 	public static string Serialize(Type type, object value) 

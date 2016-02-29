@@ -16,7 +16,7 @@
         {
             "Name": "DefaultPrompt2",
             "Prompt": "This is a default prompt, but different. Wow!",
-            "NarratorOnly": false,
+            "NarratorOnly": true,
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -25,6 +25,30 @@
                 },
                 {
                     "Text": "Choice 2",
+                    "TargetPrompt": "Hello"
+                }
+            ]
+        },
+        {
+            "Name": "Hello",
+            "Prompt": "What's up, this prompt is sweet!",
+            "NarratorOnly": true,
+            "PrefabToSpawn": null,
+            "Choices": [
+                {
+                    "Text": "Back to start",
+                    "TargetPrompt": "DefaultPrompt"
+                },
+                {
+                    "Text": "Somewhere else",
+                    "TargetPrompt": "DefaultPrompt2"
+                },
+                {
+                    "Text": "AYyy",
+                    "TargetPrompt": "Hello"
+                },
+                {
+                    "Text": "lmao",
                     "TargetPrompt": "DefaultPrompt"
                 }
             ]

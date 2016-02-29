@@ -5,6 +5,7 @@ using Newtonsoft.Json.Linq;
 
 public class AirConsoleReceiver : MonoBehaviour {
 	private int narratorId;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -27,12 +28,12 @@ public class AirConsoleReceiver : MonoBehaviour {
 
 	void AirConsole_instance_onMessage (int from, JToken data)
 	{
-		AirConsole.instance.Message(from, "Full of pixels");
-
+		narratorId = from;
+		print((string)data);
 	}
 
-	// Update is called once per frame
-	void Update () {
-
+	public void SendPrompt(StoryPrompt aPrompt) {
+		print(aPrompt.Serialize());
+		AirConsole.instance.Broadcast(aPrompt.Serialize());
 	}
 }

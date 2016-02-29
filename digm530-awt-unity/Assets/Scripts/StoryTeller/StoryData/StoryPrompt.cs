@@ -27,4 +27,9 @@ public class StoryPrompt
 	{
 		return PrefabToSpawn != null;
 	}
+
+	public string Serialize()
+	{
+		return StoryTeller.Serialize(typeof(StoryPrompt), this);
+	}
 }
