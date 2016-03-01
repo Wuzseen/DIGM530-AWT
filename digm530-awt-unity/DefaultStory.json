@@ -77,7 +77,7 @@
         },
         {
             "Name": "crossbowRoom",
-            "Prompt": "As your hand wraps around the familiar grip of your grossbow you slowly blink. As your eyes open you find yourself in a changed landscape. You were a hunter. Adorned around the room are trophies from your various escapades. Above your bed is the frame of a mighty bear. A roaring fire is ablaze in a pit in the middle of the room. A window to peer outside is visible and a roaring blizzard is seen outside.",
+            "Prompt": "As your hand wraps around the familiar grip of your crossbow you slowly blink. As your eyes open you find yourself in a changed landscape. You were a hunter. Adorned around the room are trophies from your various escapades. Above your bed is the frame of a mighty bear. A roaring fire is ablaze in a pit in the middle of the room. A window to peer outside is visible and a roaring blizzard is seen outside.",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
             "Choices": [
