@@ -8,6 +8,8 @@ public class StoryPrompt
 	public string Name {get; set; }
 	public string Prompt { get; set; }
 
+	public string ImageName { get; set; }
+
 	public bool NarratorOnly { get; set; }
 
 	public bool FormatIsDeathWord { get; set; }

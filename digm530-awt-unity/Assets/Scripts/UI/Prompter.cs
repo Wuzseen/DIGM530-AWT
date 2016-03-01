@@ -21,6 +21,8 @@ public class Prompter : MonoBehaviour {
 	public UnityEvent onPromptStart;
 	public UnityEvent onPromptEnd;
 
+	public PrompterImage imgPrompt;
+
 	void Awake()
 	{
 		canvasGroup = this.GetComponent<CanvasGroup>();
@@ -60,6 +62,15 @@ public class Prompter : MonoBehaviour {
 		
 		onPromptStart.Invoke();
 		CreateChoices(prompt);
+		print(prompt.ImageName);
+		if(prompt.ImageName != null)
+		{
+			imgPrompt.LoadFromPrompt(prompt);
+		}
+		else
+		{
+			imgPrompt.DisableImg();
+		}
 
 		if(prompt.NarratorOnly) 
 		{
