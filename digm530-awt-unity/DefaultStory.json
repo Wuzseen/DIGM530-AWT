@@ -52,6 +52,7 @@
         {
             "Name": "staffRoom",
             "Prompt": "The world springs up around you. You and your trusty staff.\n\n Suddenly details spring back to your mind. You were in your hut, practicing your magic spells. When... when, well--that's all you remember for now. But suddenly around you the world springs to life. Some of the black void is filled in with what you remember to be your druidic hut.\n\n Beyond your hut a magical glade forms seeping with magic and teeming with all sorts of life. \n\nYour strength returns to you as you clasp your staff to your chest.",
+            "ImageName": "staff_B",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
             "Choices": [
@@ -352,7 +353,7 @@
             "Choices": [
                 {
                     "Text": "Continue",
-                    "TargetPrompt": "window01-bow-interludeKnock"
+                    "TargetPrompt": "window01-staff-interludeKnock"
                 },
             ]
         },
@@ -364,7 +365,7 @@
             "Choices": [
                 {
                     "Text": "Continue",
-                    "TargetPrompt": "window01-bow-interludeKnock"
+                    "TargetPrompt": "window01-sword-interludeKnock"
                 },
             ]
         },
