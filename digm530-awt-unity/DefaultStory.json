@@ -3,24 +3,12 @@
     "Prompts": [
         {
             "Name": "Narrator Intro",
-            "Prompt": "A character is just about to utter their last words:",
+            "Prompt": "A character is just about to utter their last words. You know how they died; in fact it happened just the way you wanted. Look at the main screen and input the player's last words.",
             "NarratorOnly": true,
             "PrefabToSpawn": null,
             "Choices": [
                 {
-                    "Text": "Their final words...",
-                    "TargetPrompt": "finalWords"
-                }
-            ]
-        },
-        {
-            "Name": "finalWords",
-            "Prompt": "Their final words were:",
-            "NarratorOnly": false,
-            "PrefabToSpawn": null,
-            "Choices": [
-                {
-                    "Text": "Oops, just click.",
+                    "Text": "Begin.",
                     "TargetPrompt": "Intro"
                 },
             ]
@@ -29,6 +17,7 @@
             "Name": "Intro",
             "Prompt": "Your world slowly fades to black as you utter your last words: {0} ",
             "NarratorOnly": false,
+            "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
                 {

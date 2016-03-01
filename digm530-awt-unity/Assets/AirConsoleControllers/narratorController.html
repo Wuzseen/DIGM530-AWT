@@ -29,6 +29,7 @@
 
 		function App() {
 			var me = this;
+			HideAllButtons();
 			me.airconsole = new AirConsole({"orientation": "landscape"});
 
 			me.airconsole.onMessage = function(from, data) {
@@ -78,6 +79,9 @@
 				document.getElementById("buttons").style.visibility = 'visible';
 				SetButton("b1", choices[0]["Text"]);
 				var length = choices.length;
+				if(length == 0) {
+					HideAllButtons();
+				}
 				if(length == 1) {
 					document.getElementById("b1").style.visibility = 'visible';
 					SetButton("b1", choices[0]["Text"]);

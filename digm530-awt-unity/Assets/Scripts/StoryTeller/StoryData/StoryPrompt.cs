@@ -10,6 +10,8 @@ public class StoryPrompt
 
 	public bool NarratorOnly { get; set; }
 
+	public bool FormatIsDeathWord { get; set; }
+
 	public string PrefabToSpawn { get; set; }
 
 	public List<StoryChoice> Choices { get; set; }

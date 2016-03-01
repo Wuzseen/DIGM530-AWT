@@ -6,6 +6,7 @@ using UnityEngine.Events;
 using System.Collections.Generic;
 
 public class Prompter : MonoBehaviour {
+	public CanvasGroup canvasGroup { get; set; }
 	public Text promptField;
 	public float TimePerLetter = .15f;
 
@@ -22,6 +23,7 @@ public class Prompter : MonoBehaviour {
 
 	void Awake()
 	{
+		canvasGroup = this.GetComponent<CanvasGroup>();
 		prompterChoices = new List<PrompterChoice>();
 	}
 
