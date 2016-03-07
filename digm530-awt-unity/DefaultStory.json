@@ -31,6 +31,7 @@
             "Name": "wakeUp",
             "Prompt": "You open your eyes, slowly. The phrase {0} seems burned into your mind. What was that? What does {0} mean? You were certain you just died. Yet you remember virtually nothing. Not even where you are.\n\nYou are surrounded by a void. An endless tunnel in all directions. Nothing but darkness except for a light fixed on the horizon. No matter which way you turn the light seems infinitely far away.\n\nAs you regain your consciousness you feel something in your hand. Something familiar. You firmly grasp what seems to be a handle. It seemingly restores your strength. You look to your hand and see your trusty...",
             "NarratorOnly": false,
+            "ImageName": "weapons_Array_B",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -67,6 +68,7 @@
             "Name": "swordRoom",
             "Prompt": "All around you the world falls into place. From the infinite void what is unquestionably castle stone begins to surround you. This place is familiar to you. Your royal chambers. And in your hand is the sword with which you liberated a kingdom. The large cold room is accented only by a grand fireplace and a magnificent chandeleir hanging above your bed. Many details in the room still fall endlessly into a black void. Though where the cold castle ends and the black void begins is anyone's guess.",
             "NarratorOnly": false,
+            "ImageName": "sword_B",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -80,6 +82,7 @@
             "Name": "crossbowRoom",
             "Prompt": "As your hand wraps around the familiar grip of your crossbow you slowly blink. As your eyes open you find yourself in a changed landscape. You were a hunter. Adorned around the room are trophies from your various escapades. Above your bed is the frame of a mighty bear. A roaring fire is ablaze in a pit in the middle of the room. A window to peer outside is visible and a roaring blizzard is seen outside.",
             "NarratorOnly": false,
+            "ImageName": "crossbow_B",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -553,6 +556,7 @@
             "Prompt": " {0}  What? That phrase! Whatever is on the other side is chanting it.   {0}!!!!!!!!!   Louder.    {0}!!!!!!!!!    Louder still.    *{0}*?    The door, as if by magic, seemingly disintigrates. Before you stands a tall hooded figure. Menacing and wraith like. The figure slowly glides towards you. As he does the environment around you melts into darkness once more.  After but a moment all that remains is the figure who slowly removes their hood. Beneath the hood is naught by a singular white light which slowly consumes your entire being.",
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
+            "ImageName": "hooded_Figure_B",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -567,6 +571,7 @@
             "Prompt": " {0}  What? That phrase! Whatever is on the other side is chanting it.   {0}!!!!!!!!!   Louder.    {0}!!!!!!!!!    Louder still.    *{0}*?    The door, as if by magic, seemingly disintigrates. Before you stands a tall hooded figure. Menacing and wraith like. The figure slowly glides towards you. As he does the environment around you melts into darkness once more.  After but a moment all that remains is the figure who slowly removes their hood. Beneath the hood is naught by a singular white light which slowly consumes your entire being.",
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
+            "ImageName": "hooded_Figure_B",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -581,6 +586,7 @@
             "Prompt": " You lay your staff on the ground. The knock is calling to you. Wanting to take you home. You trust it implicitly--not even knowing what's on the other side. It's curiously natural to you. Your hand reaches for the door but before you can open the door the knob twists and the door opens on its own. There is nothing in front of you but the black void. Your feeling of trust is immediately lost and you turn to grab your staff. Yet it's not there. The entire room has once again faded into blackness entirely. {0} A voice reaches out to you through the darkness. Repeating {0} repeatedly. Before long you are repeating {0} along with the voice in the darkness. And then, suddenly the voice stops but you can't stop saying {0}. Over and over again you say the phrase.",
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
+            "ImageName": "hooded_Figure_B",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -592,13 +598,30 @@
         },
         {
             "Name": "door01-sword-hoodedFigure01",
-            "Prompt": " You lay your sword on the ground. The knock is calling to you. Wanting to take you home. You trust it implicitly--not even knowing what's on the other side. It's curiously natural to you. Your hand reaches for the door but before you can open the door the knob twists and the door opens on its own. There is nothing in front of you but the black void. Your feeling of trust is immediately lost and you turn to grab your sword. Yet it's not there. The entire room has once again faded into blackness entirely. {0} A voice reaches out to you through the darkness. Repeating {0} repeatedly. Before long you are repeating {0} along with the voice in the darkness. And then, suddenly the voice stops but you can't stop saying {0}. Over and over again you say the phrase.",
+            "Prompt": " You lay your sword on the ground. The knock is calling to you. Wanting to take you home. You trust it implicitly--not even knowing what's on the other side. It's curiously natural to you. Your hand reaches for the door but before you can open the door the knob twists and the door opens on its own. \n\nThere is nothing in front of you but the black void. Your feeling of trust is immediately lost and you turn to grab your sword. Yet it's not there. The entire room has once again faded into blackness entirely. {0} A voice reaches out to you through the darkness. Repeating {0} repeatedly. Before long you are repeating {0} along with the voice in the darkness. And then, suddenly the voice stops but you can't stop saying {0}.\n\nOver and over again you say the phrase. \"{0}\"\n\nThen it happens a hooded figure stands before you, simply appearing out of thin air. Beneath the hood is nothing but white light. Standing in stark contrast to the pitch black surrounding you.\n\nThe hooded figure reaches up and begins to lower their hood. The white light escapes the figure and assaults your senses. It envelops you completely. The warmness of the light fills you completely and before you can even understand what's happening... you die.
+            ",
+            "NarratorOnly": false,
+            "ImageName": "hooded_Figure_B",
+            "FormatIsDeathWord": true,
+            "PrefabToSpawn": null,
+            "Choices": [
+                {
+                    "Text": "The Cycle is Broken",
+                    "TargetPrompt": "youWin"
+                },
+            ]
+            
+        },
+        {
+            "Name": "youWin",
+            "Prompt": "You've escaped the endless cycle of death.
+            ",
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
                 {
-                    "Text": "You Die!",
+                    "Text": "Play again",
                     "TargetPrompt": "wakeUp"
                 },
             ]
@@ -620,7 +643,7 @@
         },
         {
             "Name": "window01-staff-hoodedFigure01",
-            "Prompt": "Not knowing what to expect you peer out the window in the room. The black void peers back. The door to your room opens with a bang. Out of the corner of your eye you catch a black blur. You jump back from the window and look for your staff. It's nowhere to be found. Suddenly you begin to rise off the ground. {0}. You hear the phrase and remember--it's a levitation spell. You try to fight against the magic and as you struggle you catch sight of a black hooded figure using your trusty staff. Suddenly your room disappears from sight and you return to the black void still rising infinitely through empty space. The  hooded figure is still visible far beneath you. Instead of black though, they seem to be replaced with a blazign white light. Suddenly you stop rising and begin to fall through the air. Your world slowly fades to black as you utter your last words: {0}",
+            "Prompt": "Not knowing what to expect you peer out the window in the room. The black void peers back. The door to your room opens with a bang. Out of the corner of your eye you catch a black blur. You jump back from the window and look for your staff. It's nowhere to be found. \n\nSuddenly you begin to rise off the ground. {0}. You hear the phrase and remember--it's a levitation spell. \n\nYou try to fight against the magic and as you struggle you catch sight of a black hooded figure using your trusty staff. Suddenly your room disappears from sight and you return to the black void still rising infinitely through empty space. The  hooded figure is still visible far beneath you. Instead of black though, they seem to be replaced with a blazign white light. Suddenly you stop rising and begin to fall through the air. Your world slowly fades to black as you utter your last words: {0}",
             "NarratorOnly": false,
             "ImageName": "hooded_Figure_B",
             "FormatIsDeathWord": true,
@@ -635,7 +658,7 @@
         },
         {
             "Name": "window01-sword-hoodedFigure01",
-            "Prompt": "Not knowing what to expect you peer out the window in the room. The black void peers back. The door to your room opens with a bang. Out of the corner of your eye you catch a black blur. You jump back from the window and look for your sword. It's nowhere to be found. Your world slowly fades to black as you utter your last words: {0}",
+            "Prompt": "Not knowing what to expect you peer out the window in the room. The black void peers back. The door to your room opens with a bang. Out of the corner of your eye you barely can catch a black blur. You jump back from the window and look for your sword. It's nowhere to be found. Your world slowly fades to black as you utter your last words: {0}",
             "NarratorOnly": false,
             "ImageName": "hooded_Figure_B",
             "FormatIsDeathWord": true,
@@ -1154,7 +1177,7 @@
         },
         {
             "Name": "scream01-sword",
-            "Prompt": "Your drop your sword clanking the ground. AhhhhahhahhhhhahhahahahhahahahAHHHHHHHHHH!!!!! you scream at the top of your lungs. Surely all your attendants will come rushing.",
+            "Prompt": "You drop your sword clanking the ground. AhhhhahhahhhhhahhahahahhahahahAHHHHHHHHHH!!!!! you scream at the top of your lungs. Surely all your attendants will come rushing.",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
             "Choices": [
