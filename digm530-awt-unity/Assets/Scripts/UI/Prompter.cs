@@ -23,6 +23,8 @@ public class Prompter : MonoBehaviour {
 
 	public PrompterImage imgPrompt;
 
+    public static bool Prompting { get; private set; }
+
 	void Awake()
 	{
 		canvasGroup = this.GetComponent<CanvasGroup>();
@@ -48,6 +50,7 @@ public class Prompter : MonoBehaviour {
 
 	public void MakePrompt(StoryPrompt prompt)
 	{
+        StopCoroutine("DoPrompt");
 		StartCoroutine(DoPrompt(prompt));
 	}
 
@@ -71,6 +74,11 @@ public class Prompter : MonoBehaviour {
 			imgPrompt.DisableImg();
 		}
 
+        if(prompt.AudioName != null)
+        {
+            prompt.PlayAudio();
+        }
+
 		if(prompt.NarratorOnly) 
 		{
 			fateAwaits.SetActive(true);
@@ -82,15 +90,27 @@ public class Prompter : MonoBehaviour {
 			float duration = PromptText.Length * TimePerLetter;
 
 			int promptLength = 0;
+            Prompting = true;
+            bool exit = false;
 			while(promptLength < PromptText.Length - 1)
 			{
 				promptField.text = PromptText.Substring(0, promptLength);
 				promptLength++;
-				yield return new WaitForSeconds(TimePerLetter);
-			}
+                float t = 0f;
+                while (t < TimePerLetter)
+                {
+                    t += Time.deltaTime;
+                    exit = Input.GetKeyDown(KeyCode.Space);
+                    if (exit)
+                        break;
+                    yield return null;
+                }
+                if (exit)
+                    break;
+            }
 			promptField.text = PromptText;
 		}
-
+        Prompting = false;
 		onPromptEnd.Invoke();
 	}
 }

@@ -9,6 +9,7 @@ public class StoryPrompt
 	public string Prompt { get; set; }
 
 	public string ImageName { get; set; }
+    public string AudioName { get; set; }
 
 	public bool NarratorOnly { get; set; }
 
@@ -45,4 +46,10 @@ public class StoryPrompt
 	{
 		return StoryTeller.Serialize(typeof(StoryPrompt), this);
 	}
+
+    public void PlayAudio()
+    {
+        AudioClip clip = Resources.Load<AudioClip>("SFX/" + AudioName);
+        SoundController.PlaySFX(clip);
+    }
 }

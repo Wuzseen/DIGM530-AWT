@@ -69,6 +69,7 @@
             "ImageName": "staff_B",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
+            "AudioName":  "staff",
             "Choices": [
                 {
                     "Text": "Continue",
@@ -81,6 +82,7 @@
             "Prompt": "All around you the world falls into place. From the infinite void what is unquestionably castle stone begins to surround you. This place is familiar to you. Your royal chambers. And in your hand is the sword with which you liberated a kingdom. The large cold room is accented only by a grand fireplace and a magnificent chandeleir hanging above your bed. Many details in the room still fall endlessly into a black void. Though where the cold castle ends and the black void begins is anyone's guess.",
             "NarratorOnly": false,
             "ImageName": "sword_B",
+            "AudioName":  "sword",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -94,6 +96,7 @@
             "Prompt": "As your hand wraps around the familiar grip of your crossbow you slowly blink. As your eyes open you find yourself in a changed landscape. You were a hunter. Adorned around the room are trophies from your various escapades. Above your bed is the frame of a mighty bear. A roaring fire is ablaze in a pit in the middle of the room. A window to peer outside is visible and a roaring blizzard is seen outside.",
             "NarratorOnly": false,
             "ImageName": "crossbow_B",
+            "AudioName":  "crossbow",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -158,6 +161,7 @@
             "Name": "knockStaff",
             "Prompt": "A series of knocks is heard on your hut's door. Strange, these woods are home only to a few creatures. None of which would typically knock. Growl, snarl, or purr perhaps--but never knock. You grip your staff, knowing that should the worst happen you can cast a spell to save yourself. But what of {0} the phrase sticks out to you like a bad omen. Surely these knocks are a bad sign.",
             "NarratorOnly": false,
+            "AudioName":  "knock",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -181,6 +185,7 @@
             "Prompt": "The royal chambers are hardly ever disturbed. Your majesty is only bothered by events of utmost importance. Yet a knock is heard on your door all the same. Impulsively you begin to rush towards the door but you remember the phrase lingering in your mind : {0}.",
             "FormatIsDeathWord": true,
             "NarratorOnly": false,
+            "AudioName":  "knock",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -203,6 +208,7 @@
             "Prompt": "Time passes slowly as all you hear are the crackles of flames and the soft blowing wind outside. A set of knocks suddenly pierces the serenity. Who, or what, could be knocking on your door. A secluded hunter knows only a few select friends. Meanwhile, in the back of your mind, {0} remains a complete mystery. Why is this phrase so important? Why do you think you are dead?",
             "FormatIsDeathWord": true,
             "NarratorOnly": false,
+            "AudioName":  "knock",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -226,6 +232,7 @@
             "FormatIsDeathWord": true,
             "NarratorOnly": false,
             "PrefabToSpawn": null,
+            "AudioName":  "growl",
             "Choices": [
                 {
                     "Text": "Hide under the bed",
@@ -248,6 +255,7 @@
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
+            "AudioName":  "growl",
             "Choices": [
                 {
                     "Text": "Hide under the bed",
@@ -270,6 +278,7 @@
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
+            "AudioName":  "growl",
             "Choices": [
                 {
                     "Text": "Hide under the bed",
@@ -1154,6 +1163,7 @@
             "Prompt": "You clutch your staff in your hand. Battle-ready. Thinking of all manner of spells you might need to combat this most likely *deadly* foe.",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
+            "AudioName":  "staff",
             "Choices": [
                 {
                     "Text": "Continue",
@@ -1166,6 +1176,7 @@
             "Prompt": "Royalty doesn't back down. You grip your sword confidently in your hands. As you grip the sword you feel more alive than ever.",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
+            "AudioName":  "sword",
             "Choices": [
                 {
                     "Text": "Continue",
@@ -1178,6 +1189,7 @@
             "Prompt": "No matter the beast. You and your crossbow can take down any target no matter how large.",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
+            "AudioName":  "crossbow",
             "Choices": [
                 {
                     "Text": "Continue",
@@ -1190,6 +1202,7 @@
             "Prompt": "You let out a large bellowing scream. Letting the world know, and the monster outside, that you are absolutely terrified.",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
+            "AudioName":  "scream",
             "Choices": [
                 {
                     "Text": "Continue",
@@ -1202,6 +1215,7 @@
             "Prompt": "You drop your sword clanking the ground. AhhhhahhahhhhhahhahahahhahahahAHHHHHHHHHH!!!!! you scream at the top of your lungs. Surely all your attendants will come rushing.",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
+            "AudioName":  "scream",
             "Choices": [
                 {
                     "Text": "Continue",
@@ -1215,6 +1229,7 @@
             "FormatIsDeathWord": true,
             "NarratorOnly": false,
             "PrefabToSpawn": null,
+            "AudioName":  "scream",
             "Choices": [
                 {
                     "Text": "Continue",
@@ -1501,6 +1516,7 @@
             "Name": "bed01-staff-catAttack",
             "Prompt": "Suddenly a cat leaps through your window. While it could be harmless, many of the cats in the magical glade outside are actually quite deadly. In fact, some even sound like bears.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1518,6 +1534,7 @@
             "Name": "bed01-sword-catAttack",
             "Prompt": "A cat leaps into your chamber. You love cats, but you're still not sure what the growl was.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1535,6 +1552,7 @@
             "Name": "bed01-bow-catAttack",
             "Prompt": "A cat leaps in from the cold. No way a cat survied out there. But maybe one did and just wanted to be warm? Regardless, what was that growl.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1552,6 +1570,7 @@
             "Name": "ready01-staff-catAttack",
             "Prompt": "For minutes nothing else happens. You decide to cautiously open the door. On your step outside is naught but a cat.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1569,6 +1588,7 @@
             "Name": "ready01-sword-catAttack",
             "Prompt": "Weapon in hand you cautiously approach your door. Battle ready you await whatever is on the other side. You suddenly fling your door open to be greeted by a cat before you.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1586,6 +1606,7 @@
             "Name": "ready01-bow-catAttack",
             "Prompt": "With one hand on your crossbow ready to fire your other reaches out to open your door. In front of you is a cat.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1603,6 +1624,7 @@
             "Name": "scream01-staff-catAttack",
             "Prompt": "You scream and scream and scream. Before long a cat bounces in through your window. Does this calm you down or terrify you more?",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1620,6 +1642,7 @@
             "Name": "scream01-sword-catAttack",
             "Prompt": "Your royal scream was supposed to attract your servants. Instead, it attracted a cat which comes in through your window.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1637,6 +1660,7 @@
             "Name": "scream01-bow-catAttack",
             "Prompt": "Your battle-cry has never attracted a cat before, but that is exactly what bounces through the window.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1654,6 +1678,7 @@
             "Name": "bed01-staff-catCrawl01",
             "Prompt": "You crawl out of your bed. It's a cute little kitty! But it's a kitty with a taste for flesh. The cat roars at you. It turns out that it was a cat that sounds like a bear. The cat bites into your neck the second you get near it. You bleed out slowly and painfully.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1666,6 +1691,7 @@
             "Name": "bed01-sword-catCrawl01",
             "Prompt": "The cat's presence coaxes you out of your bed. Immediately the cat leaps at you and gives you a small bite on your hand. While not instantly painful, the deed has been done. The cat delivered a poisonous payload. It must have been your traitorous grandmother! As the poison begins to take its toll and you can only wonder behind the meaning of '{0}'.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -1680,6 +1706,7 @@
             "Name": "bed01-bow-catCrawl01",
             "Prompt": "You scramble out of your bed immediately. You recognize that this cat represents an incredible danger. But it's too late. Before your very eyes the cat transforms into a bear and mauls you to death.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1693,6 +1720,7 @@
             "Name": "ready01-staff-catReady01",
             "Prompt": "You lower your weapon. It's a harmless kitten? What's the worst that could happen. Well, the cat could have the strength of a bear for one thing. The cat wastes no time in capitalizing on your momentary pause. With the strength of a bear the cat rips you to shreds. Druids should be better with animals.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1705,6 +1733,7 @@
             "Name": "ready01-sword-catReady01",
             "Prompt": "You lower your weapon. Royalty would never kill a cat. In your moment of weakness the cat leaps at you though and bites you on the arm.  The mangy animal! You realize the cat must have been sent by your traitorous grandmother. Instead of a dragon, she sent poisonous cat. You can feel the poison seep into your veins. Unable to fight it, you slump to the ground and perish.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1717,6 +1746,7 @@
             "Name": "ready01-bow-catReady01",
             "Prompt": "A cat is not a suitable target for such a hunter. You lower your weapon, you simply couldn't bare it to harm a kitten. But, before your very eyes, the cat transforms. Into a bear. The angry creature is now before you in all its glory. Not a mere cat, but a bear-cat. The bear-cat launches itself at you and shreds you to death.",
             "NarratorOnly": false,
+            "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1729,6 +1759,7 @@
             "Name": "scream01-staff-catScream01",
             "Prompt": "You continue screaming. You know whatever this animal is, it's no mere cat. The screams annoy the animal who changes to reveal their true form. A monstrous bear-cat. The bear cat attacks you to cease your screaming. Frozen in terror you can do nothing as the bear tears you to pieces.",
             "NarratorOnly": false,
+            "AudioName":  "scream",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1741,6 +1772,7 @@
             "Name": "scream01-sword-catScream01",
             "Prompt": "You continue to scream for help. As your rule of this kingdom continue grew your paranoia over being assassinated only grew. You fear the cat was sent by your traitorous grandmother. And rightly so. Yet you should have done something other than scream. Unimpeded the cat leaps at you and bites you on your arm delivering a deadly poison. Very quickly the poison travels through your body. Paralyzing you (and stopping your screams!). Then the poison slowly drains the life from your body.",
             "NarratorOnly": false,
+            "AudioName":  "scream",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1753,6 +1785,7 @@
             "Name": "scream01-bow-catScream01",
             "Prompt": "You continue to unleash your mighty battle cry. The cat runs away in terror, hiding in a corner of your room. Afraid. Satisfied that the danger has passed you lower your weapon. And move towards the cat. Before your very eyes the cat transforms into a monstrous bear. Having lowered your weapon there is nothing to defend yourself with and the bear immediately attacks you.",
             "NarratorOnly": false,
+            "AudioName":  "scream",
             "PrefabToSpawn": null,
             "Choices": [
                 {

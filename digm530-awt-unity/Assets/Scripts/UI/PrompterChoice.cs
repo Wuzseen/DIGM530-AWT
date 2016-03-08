@@ -18,4 +18,9 @@ public class PrompterChoice : MonoBehaviour {
 	{
 		StoryTeller.Instance.ChoiceSelected(choice);
 	}
+
+    public void Update()
+    {
+        button.interactable = !Prompter.Prompting;
+    }
 }
