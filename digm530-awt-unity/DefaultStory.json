@@ -110,6 +110,7 @@
             "Name": "interlude01-staff",
             "Prompt": "This seems very familiar to you; what was that noise?",
             "NarratorOnly": true,
+            "ImageName": "woodlandBED",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -127,6 +128,7 @@
             "Name": "interlude01-sword",
             "Prompt": "This seems very familiar to you; what was that noise?",
             "NarratorOnly": true,
+            "ImageName": "castleBED",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -144,6 +146,7 @@
             "Name": "interlude01-bow",
             "Prompt": "This seems very familiar to you; what was that noise?",
             "NarratorOnly": true,
+            "ImageName": "hutBED",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -371,7 +374,7 @@
             "Name": "window01-staff",
             "Prompt": "You are curious, but not so curious to throw caution to the wind.\n\nYou decide to peek out your window.",
             "NarratorOnly": false,
-            "ImageName": "window2",
+            "ImageName": "woodlandWINDOW",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -384,6 +387,7 @@
             "Name": "window01-sword",
             "Prompt": "Perhaps it's paranoia, but you are compelled to peer outside your window first.",
             "NarratorOnly": false,
+            "ImageName": "castleWINDOW",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -396,6 +400,7 @@
             "Name": "window01-bow",
             "Prompt": "What in the blazes could be outside? You decide to sneak a glance outside your window.",
             "NarratorOnly": false,
+            "ImageName": "hutWINDOW",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -710,6 +715,7 @@
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
+            "AudioName": "grandma",
             "Choices": [
                 {
                     "Text": "Open the door anyway",
@@ -725,6 +731,7 @@
         {
             "Name": "ignore01-sword-grandma01",
             "Prompt": "A sweet and wise voice rings out to you. {0} There it is! That phrase that has occupied you so. Spoken by... yes, none other than your very own grandmother. How she has gotten here is beyond you. Perhaps it is not what it seems. Your traitorous grandmother almost swung your war of liberation in the wrong direction. Even if it were her, what would you say?",
+            "AudioName": "grandma",
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
@@ -744,6 +751,7 @@
             "Name": "ignore01-bow-grandma01",
             "Prompt": "A sweet and wise voice rings out to you. {0} There it is! That phrase that has occupied you so. Spoken by... yes, none other than your very own grandmother. How she has gotten here is beyond you. Perhaps it is not what it seems. It's true what they say about hunters. They all have grandmothers.",
             "NarratorOnly": false,
+            "AudioName": "grandma",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -762,6 +770,7 @@
             "Name": "door01-staff-grandma01",
             "Prompt": "A sweet and wise voice rings out to you. {0} There it is! That phrase that has occupied you so. Spoken by... yes, none other than your very own grandmother. How she has gotten here is beyond you. Perhaps it is not what it seems. Excitedly you race towards the door and fling it open! It's Grandma. Grandma is here!",
             "NarratorOnly": false,
+            "AudioName": "grandma",
             "ImageName": "grandma_B",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
@@ -781,6 +790,7 @@
             "Name": "door01-sword-grandma01",
             "Prompt": "A sweet and wise voice rings out to you. {0} There it is! That phrase that has occupied you so. Spoken by... yes, none other than your very own grandmother. How she has gotten here is beyond you. Perhaps it is not what it seems. Royalty must remain stalwart at all times. But your grandmother was a traitor during the war.",
             "NarratorOnly": false,
+            "AudioName": "grandma",
             "ImageName": "grandma_B",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
@@ -801,6 +811,7 @@
             "Prompt": "A sweet and wise voice rings out to you. {0} There it is! That phrase that has occupied you so. Spoken by... yes, none other than your very own grandmother. How she has gotten here is beyond you. Perhaps it is not what it seems. Yes. It actually *is* your grandmother.",
             "NarratorOnly": false,
             "ImageName": "grandma_B",
+            "AudioName": "grandma",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -819,6 +830,7 @@
             "Name": "window01-staff-grandma01",
             "Prompt": "A sweet and wise voice rings out to you. {0} There it is! That phrase that has occupied you so. Spoken by... yes, none other than your very own grandmother. How she has gotten here is beyond you. Perhaps it is not what it seems. You see her. Your grandmother. You could sneak up on her to say hello. Or maybe pull a trick on her and tell her to go away only to ambush her with a love spell!",
             "NarratorOnly": false,
+            "AudioName": "grandma",
             "ImageName": "grandma_B",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
@@ -839,6 +851,7 @@
             "Prompt": "A sweet and wise voice rings out to you. {0} There it is! That phrase that has occupied you so. Spoken by... yes, none other than your very own grandmother. How she has gotten here is beyond you. Perhaps it is not what it seems. Your grandmother was a traitor during the war of liberation. Her actions still lay heavy on your mind to this day. Would you confront the woman or sneak out during the night?",
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
+            "AudioName": "grandma",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -857,6 +870,7 @@
             "Prompt": "A sweet and wise voice rings out to you. {0} There it is! That phrase that has occupied you so. Spoken by... yes, none other than your very own grandmother. How she has gotten here is beyond you. Perhaps it is not what it seems. While it is your grandmother, your seclusion should not be impeded. Would you sneak away or insist that your own grandmother leave?",
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
+            "AudioName": "grandma",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -872,7 +886,8 @@
         },
         {
             "Name": "ignore01-staff-gmaIgnore01",
-            "Prompt": "GRANDMA! Then you remember, she *always* called you {0}. That's where it came from. You throw your staff to the side. Overjoyed, you forget your druidic oaths. You run to open the door when suddenly your brain simply shuts off. Breaking your oaths results in death. You only manage to say {0} one last time.",
+            "Prompt": "GRANDMA! \n\nThen you remember, she always called you {0}, it's your nickname. That's where it came from. You throw your staff to the side. Overjoyed, you forget your druidic oaths. You run to open the door when suddenly your brain simply shuts off. Breaking your oaths results in death. You only manage to say {0} one last time.",
+            "AudioName": "scream",
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
@@ -1394,6 +1409,8 @@
             "Name": "bed01-staff-bearAttack",
             "Prompt": "You dash under your bed. Your staff dropping to the floor. Hiding is the best option you think to yourself. The growls turn into snarls and all of the sudden your front door explodes into splinters. A massive bear comes lumbering into your hut. The bear stumbles and sniffs around the room. You realize why the bear is here. There's a giant pot of honey in your room. And it's right above your bed. The bear climbs on top of your bed which definitely can't take the weight. The bed and bear together fall on you hiding underneath the bed. Like the bed, you couldnn't bear the weight and you expire. But not quite before you utter {0}? Inquisitively once more.",
             "NarratorOnly": false,
+            "AudioName":"growl",
+            "ImageName":"bearB_alpha",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -1408,6 +1425,8 @@
             "Name": "bed01-sword-bearAttack",
             "Prompt": "Whatever is on the other side of the door, screw fighting it! Luckily there's plenty of room underneath your bed to hide. You drop your sword and clamber underneath. The growls and snarls continue to grow. Before long your door explodes into splinters and a massive bear comes lumbering into your room. The bear lumbers around the room doing a good job in general at messing up the place. Before long the bear notices the chandelier above your bed. Before you can really react the bear has leapt on your bed to get at the chandelier. The bear is literally jumping on the bed and through that action jumping on your body. It's extremely painful, but not quite lethal. Then, suddenly, the chandelier falls from the ceiling. The bear dives away, the limber beast. Meanwhile all you can think to say is {0} right before you are impaled by all manners of chandelier shards.",
             "NarratorOnly": false,
+            "AudioName":"growl",
+            "ImageName":"bearB_alpha",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -1422,6 +1441,8 @@
             "Name": "bed01-bow-bearAttack",
             "Prompt": "Underneath you're bed you're ready for the monster. Unless it's a bear of course. *Which it absolutely is*. Your front door explodes into splinters and a bear comes barreling into your room. The bear sees the other bear trophy above your bed and immediately in a rage moves to tear it down. Rampaging through the room you're little but collateral damage to the bear. As you scream in pain as your life slowly drains away from you you only say to yourself {0} never quite realizing its meaning..",
             "NarratorOnly": false,
+            "AudioName":"growl",
+            "ImageName":"bearB_alpha",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -1436,6 +1457,8 @@
             "Name": "ready01-staff-bearAttack",
             "Prompt": "Your front door explodes. It's a massive grizzly bear. You barely have to time to react--{0} you say, almost instinctually. It's a teleport spell! The world around you crumbles back into a black void and before long is replaced by a cave. A bear cave. {0} teleports you to a *bear* cave. The bear family inside the bear cave makes immediate work of you before you can even think of another spell to say.",
             "NarratorOnly": false,
+            "AudioName":"growl",
+            "ImageName":"bearB_alpha",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -1450,6 +1473,8 @@
             "Name": "ready01-sword-bearAttack",
             "Prompt": "You stand ready. You liberated a kingdom. You can fell any number of foul beasts. A mighty challenge blasts the door open before you. It's a bear. To your credit, you fight valiantly. But ultimately a bear is extremely difficult to win against. Even with a sword. You try your hardest even landing a strike or two. But eventually the bear wins. The bear *always* wins.",
             "NarratorOnly": false,
+            "AudioName":"growl",
+            "ImageName":"bearB_alpha",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1463,6 +1488,8 @@
             "Name": "ready01-bow-bearAttack",
             "Prompt": "Stupidly you decide to stand right in front of your door, pointing your crossbow at whatever comes through. The door explodes  right in your face as a bear launches into your home. The splintering wood makes it exceedingly difficult to avoid. The bear gets you, mauls you, and disposes of you.",
             "NarratorOnly": false,
+            "AudioName":"growl",
+            "ImageName":"bearB_alpha",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1476,6 +1503,8 @@
             "Name": "scream01-staff-bearAttack",
             "Prompt": "You scream, terrified of whatever might come. Perhaps you should've taken an action because a bear blasts apart your door and charges right at you. Frozen in terror you can do nothing as the bear mauls you to death.",
             "NarratorOnly": false,
+            "AudioName":"growl",
+            "ImageName":"bearB_alpha",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1489,6 +1518,8 @@
             "Name": "scream01-sword-bearAttack",
             "Prompt": "You scream at the top of your lungs hoping anyone can hear you in the castle. Your screams fall on bear ears though because a bear a comes crashing through your door. You have just enough time to put your hand around your sword. But not quite *enough* time to put your sword to any use as the bear grabs and crushes you.",
             "NarratorOnly": false,
+            "AudioName":"growl",
+            "ImageName":"bearB_alpha",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1502,6 +1533,8 @@
             "Name": "scream01-bow-bearAttack",
             "Prompt": "Your battle-cry is epic. {0} you repeat. Whatever is on the other side quiets for a moment. *A moment*. Suddenly your door splinters open in an explosion of wood. A bear tumbles in through your door. Furious, cold, and hungry the bear charges at you. With your crossbow unloaded there is little you can do but accept your fate as this bear's next meal.",
             "NarratorOnly": false,
+            "AudioName":"growl",
+            "ImageName":"bearB_alpha",
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -1678,7 +1711,7 @@
             "Name": "bed01-staff-catCrawl01",
             "Prompt": "You crawl out of your bed. It's a cute little kitty! But it's a kitty with a taste for flesh. The cat roars at you. It turns out that it was a cat that sounds like a bear. The cat bites into your neck the second you get near it. You bleed out slowly and painfully.",
             "NarratorOnly": false,
-            "AudioName":  "cat",
+            "AudioName":  "grow",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1707,6 +1740,7 @@
             "Prompt": "You scramble out of your bed immediately. You recognize that this cat represents an incredible danger. But it's too late. Before your very eyes the cat transforms into a bear and mauls you to death.",
             "NarratorOnly": false,
             "AudioName":  "cat",
+            "ImageName":"bearB_alpha",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1746,6 +1780,7 @@
             "Name": "ready01-bow-catReady01",
             "Prompt": "A cat is not a suitable target for such a hunter. You lower your weapon, you simply couldn't bare it to harm a kitten. But, before your very eyes, the cat transforms. Into a bear. The angry creature is now before you in all its glory. Not a mere cat, but a bear-cat. The bear-cat launches itself at you and shreds you to death.",
             "NarratorOnly": false,
+            "ImageName":"bear_A_alpha",
             "AudioName":  "cat",
             "PrefabToSpawn": null,
             "Choices": [
@@ -1759,6 +1794,7 @@
             "Name": "scream01-staff-catScream01",
             "Prompt": "You continue screaming. You know whatever this animal is, it's no mere cat. The screams annoy the animal who changes to reveal their true form. A monstrous bear-cat. The bear cat attacks you to cease your screaming. Frozen in terror you can do nothing as the bear tears you to pieces.",
             "NarratorOnly": false,
+            "ImageName":"bear_A_alpha",
             "AudioName":  "scream",
             "PrefabToSpawn": null,
             "Choices": [
@@ -1785,6 +1821,7 @@
             "Name": "scream01-bow-catScream01",
             "Prompt": "You continue to unleash your mighty battle cry. The cat runs away in terror, hiding in a corner of your room. Afraid. Satisfied that the danger has passed you lower your weapon. And move towards the cat. Before your very eyes the cat transforms into a monstrous bear. Having lowered your weapon there is nothing to defend yourself with and the bear immediately attacks you.",
             "NarratorOnly": false,
+            "ImageName":"bear_A_alpha",
             "AudioName":  "scream",
             "PrefabToSpawn": null,
             "Choices": [
@@ -1798,6 +1835,7 @@
             "Name": "bed01-staff-catCrawl02",
             "Prompt": "You stay hidden underneath your bed. While a fan of cats, you simply can't trust that this isn't some trap. *There are cats with the strength of bears in these woods.* You stay hidden underneath your bed as the cat wanders around the room. Yet you should've probably chosen a better hiding spot. It is a cat with the strength of a bear. As the cat finally makes its way to your hiding spot it finally spots you.It lumbers after you, letting out a mighty bear like roar. It's too late for you to get out of the way as the bear-cat removes you from existence.",
             "NarratorOnly": false,
+            "AudioName":"growl",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1808,7 +1846,7 @@
         },
         {
             "Name": "bed01-sword-catCrawl02",
-            "Prompt": "Staying hidden seems smart at first. The cat doesn't *instantly* find you. But it does *eventually.* At some point during the cat's hunt you realized that it was sent by your traitorous grandmother. Instead of a dragon, this time she sent a cat. The cat simply walks up to you and bites you on the nose. The cat's teeth, having been coated in a lethal poison, pierce your skin and deliver the deadly poison. You slowly die where you lie.",
+            "Prompt": "Staying hidden seems smart at first. The cat doesn't instantly find you.\n\nBut it does eventually. At some point during the cat's hunt you realized that it was sent by your traitorous grandmother. Instead of a dragon, this time she sent a cat. The cat simply walks up to you and bites you on the nose. The cat's teeth, having been coated in a lethal poison, pierce your skin and deliver the deadly poison. You slowly die where you lie.",
             "NarratorOnly": false,
             "PrefabToSpawn": null,
             "Choices": [
@@ -1823,6 +1861,8 @@
             "Name": "bed01-bow-catCrawl02",
             "Prompt": "The cat made a terrible mistake coming in here. You stay underneath your bed taking aim at the cat. Just when you are about to shoot you are distracted though, your door explodes in a splinter of wood. A massive bear was also outside. The cat runs away in terror. Unfortunately you're stuck underneath your bed and can do nothing as the bear destroys you and your room.",
             "NarratorOnly": false,
+            "ImageName":"bear_A_alpha",
+            "AudioName":"growl",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1836,6 +1876,8 @@
             "Name": "ready01-staff-catReady02",
             "Prompt": "Taking no chances you unleash a spell, a ball of flame, at the cat. The cat deftly dodges your spell of fire. Now enraged, the cat reveals itself to you. A bear-cat--the cat transforms before your very eyes into a bear. This bear is now very angry at you and charges. You try your best to cast another spell with your staff but you simply aren't able as the bear gets a hold of you and tears you to pieces.",
             "NarratorOnly": false,
+            "ImageName":"bear_A_alpha",
+            "AudioName":"growl",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1860,6 +1902,8 @@
             "Name": "ready01-bow-catReady02",
             "Prompt": "You immediately let your bolt fly out of your crossbow. The bolt pierces the kitten instantly killing the poor animal. You're mortified. A hunter should never kill an innocent animal. You decided immediately to hold a funeral service for the kitten. You grab a shovel and venture out into the blizzard. You dig a suitable grave for the animal. Upon your return for the cat's body it is nowhere to be seen. Perhaps more alarming though is the wreckage of your hut. It's been almost destroyed. Sitting in the middle of the wreckage is a bear. You realize what happened to the cat. Unfortunately you're next. You left your crossbow inside your now ruined home. The bear sees you almost instantly and barrels after you. You can only run so fast in the snow and the bear quickly catches up and destroys you.",
             "NarratorOnly": false,
+            "ImageName":"bearB_alpha",
+            "AudioName":"growl",
             "PrefabToSpawn": null,
             "Choices": [
                 {
@@ -1897,6 +1941,8 @@
             "Name": "scream01-bow-catScream02",
             "Prompt": "The sight of the cat causes your gruff loner exterior to melt away. It's a cute little animal. You move to pet your new friend. But before your very eyes the cat transforms into a mighty bear! The bear immediately turns on you. *Why would a cat be on the top of a mountain during a blizzard?* Violently and mercilessly the bear tears you to shreds.",
             "NarratorOnly": false,
+            "ImageName":"bear_A_alpha",
+            "AudioName":"growl",
             "PrefabToSpawn": null,
             "Choices": [
                 {
