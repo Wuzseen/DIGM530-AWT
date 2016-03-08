@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 11476726}
   text: {fileID: 11416458}
+  clickNoise: {fileID: 8300000, guid: 98d14785f9468d7478bd620414891369, type: 3}
 --- !u!114 &11416458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -231,6 +232,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: clickNoise
+      value: 
+      objectReference: {fileID: 8300000, guid: 98d14785f9468d7478bd620414891369, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102090}

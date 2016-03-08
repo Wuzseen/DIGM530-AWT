@@ -5,6 +5,7 @@ using System.Collections;
 public class PrompterChoice : MonoBehaviour {
 	public Button button;
 	public Text text;
+    public AudioClip clickNoise;
 
 	private StoryChoice choice;
 
@@ -16,6 +17,7 @@ public class PrompterChoice : MonoBehaviour {
 
 	public void OnPress()
 	{
+        SoundController.PlaySFX(clickNoise);
 		StoryTeller.Instance.ChoiceSelected(choice);
 	}
 

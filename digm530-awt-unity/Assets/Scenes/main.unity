@@ -1391,7 +1391,9 @@ MonoBehaviour:
   soundTrackSource: {fileID: 1605553877}
   sfxSource: {fileID: 1783201600}
   voiceOverSource: {fileID: 229710673}
-  soundTracks: []
+  soundTracks:
+  - {fileID: 8300000, guid: c4e7a54fece5fc742902d8fb8c3c3275, type: 3}
+  - {fileID: 8300000, guid: 048c9b1b58b75d64ea150c19129b5c8a, type: 3}
   musicVolume: 1
   fxVolume: 1
 --- !u!4 &1459527023
