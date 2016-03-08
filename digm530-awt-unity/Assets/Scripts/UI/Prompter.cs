@@ -62,7 +62,6 @@ public class Prompter : MonoBehaviour {
 		
 		onPromptStart.Invoke();
 		CreateChoices(prompt);
-		print(prompt.ImageName);
 		if(prompt.ImageName != null)
 		{
 			imgPrompt.LoadFromPrompt(prompt);

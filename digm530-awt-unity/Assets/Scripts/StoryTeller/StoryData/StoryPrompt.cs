@@ -27,6 +27,15 @@ public class StoryPrompt
 		this.Choices = new List<StoryChoice>();
 	}
 
+    public StoryPrompt(StoryPrompt copy)
+    {
+        this.Name = copy.Name;
+        this.Prompt = copy.Prompt;
+        this.NarratorOnly = copy.NarratorOnly;
+        this.PrefabToSpawn = copy.PrefabToSpawn;
+        this.Choices = copy.Choices;
+    }
+
 	public bool SpawnPrefab()
 	{
 		return PrefabToSpawn != null;

@@ -36,6 +36,8 @@ public class StoryTeller : MonoBehaviour
 
 	private string lastWords;
 
+    private int cycleCount = 0;
+
 	// Use this for initialization
 	void Awake()
 	{
@@ -63,6 +65,7 @@ public class StoryTeller : MonoBehaviour
 		begun = true;
 		string json = File.ReadAllText(StoryPath);
 		this.story = Deserialize(typeof(Story), json) as Story;
+        this.story.ShuffleClues();
 		StoryPrompt firstPrompt = this.story.LookupPrompt(story.FirstPromptName);
 		activePrompt = firstPrompt;
 		this.prompter.MakePrompt(firstPrompt);
@@ -87,8 +90,36 @@ public class StoryTeller : MonoBehaviour
 	}
 
 	public void ActivateActive()
-	{
-		if(activePrompt.Name == "Narrator Intro")
+    {
+        if (activePrompt.Name == "cluePage")
+        {
+            int clue1Index = cycleCount * 2;
+            int clue2Index = cycleCount * 2 + 1;
+            if (clue1Index >= this.story.Clues.Count)
+            {
+                string allClues = "You're so close, but all clues have been discovered:\n\n";
+                for (int i = 0; i < this.story.Clues.Count; i++)
+                {
+                    allClues += (this.story.Clues[i] + "\n");
+                    allClues += "\n";
+                }
+                activePrompt.Prompt = allClues;
+            }
+            else
+            {
+                string promptCopy = activePrompt.Prompt;
+                activePrompt.Prompt = string.Format(promptCopy, "\n" + this.story.Clues[clue1Index]);
+                this.prompter.MakePrompt(activePrompt);
+                StoryPrompt copy = new StoryPrompt(activePrompt);
+                copy.Prompt = string.Format(promptCopy, "\n" + this.story.Clues[clue2Index]);
+                consoleReceiver.SendPrompt(copy);
+                cycleCount++;
+                return;
+            }
+        }
+
+
+        if (activePrompt.Name == "Narrator Intro")
 		{
 			lastWordsPanel.gameObject.SetActive(true);
 			prompter.canvasGroup.alpha = 0f;
@@ -97,7 +128,9 @@ public class StoryTeller : MonoBehaviour
 		{
 			activePrompt.Prompt = string.Format(activePrompt.Prompt, lastWords);
 		}
-	}
+        this.prompter.MakePrompt(activePrompt);
+        consoleReceiver.SendPrompt(activePrompt);
+    }
 
 	public void FirstChoiceIntro()
 	{
@@ -113,8 +146,6 @@ public class StoryTeller : MonoBehaviour
 		StoryPrompt targetPrompt = story.LookupPrompt(choice.TargetPrompt);
 		activePrompt = targetPrompt;
 		ActivateActive();
-		this.prompter.MakePrompt(targetPrompt);
-		consoleReceiver.SendPrompt(targetPrompt);
 	}
 
 	public static string Serialize(Type type, object value) 

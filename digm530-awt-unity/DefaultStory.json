@@ -1,9 +1,23 @@
 {
-    "Title": "Default Story",
+  "Title": "Default Story",
+  "Clues": [
+    "Your weapon belongs in a sheathe",
+    "There was never a growl outside your door",
+    "Cats were not involved",
+    "Your grandmother wasn't involved--at least... not directly",
+    "Staffs are cool, but they weren't what you were using",
+    "If you've died to a bear, you've done it wrong",
+    "Avoid bears",
+    "It's best to confront danger",
+    "Hiding from danger will only kill you more violently",
+    "Don't stick your neck out too far. It could get taken clean off",
+    "Was it a wraith or another type of black phantom? You remember a hooded figure very clearly.",
+    "Crossbows are lame."
+  ],
     "Prompts": [
         {
             "Name": "Narrator Intro",
-            "Prompt": "A character is just about to utter their last words. You know how they died; in fact it happened just the way you wanted. Look at the main screen and input the player's last words.",
+            "Prompt": "You're dying, endlessly and relentlessly. Your conscious is split in two. Remember who you were, guide yourself to the light. Discuss your final words with your soul and enter them in the main game window.",
             "NarratorOnly": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -46,8 +60,7 @@
                 {
                     "Text": "Crossbow",
                     "TargetPrompt": "crossbowRoom"
-                },
-               
+                },     
             ]
         },
         {
@@ -60,8 +73,7 @@
                 {
                     "Text": "Continue",
                     "TargetPrompt": "interlude01-staff"
-                },
-               
+                },               
             ]
         },
         {
@@ -74,8 +86,7 @@
                 {
                     "Text": "Continue",
                     "TargetPrompt": "interlude01-sword"
-                },
-               
+                },              
             ]
         },
         {
@@ -94,7 +105,7 @@
         },
         {
             "Name": "interlude01-staff",
-            "Prompt": "All is not well for our developing character. A challenge confronts them:",
+            "Prompt": "This seems very familiar to you; what was that noise?",
             "NarratorOnly": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -111,7 +122,7 @@
         },
         {
             "Name": "interlude01-sword",
-            "Prompt": "All is not well for our developing character. A challenge confronts them:",
+            "Prompt": "This seems very familiar to you; what was that noise?",
             "NarratorOnly": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -128,7 +139,7 @@
         },
         {
             "Name": "interlude01-bow",
-            "Prompt": "All is not well for our developing character. A challenge confronts them:",
+            "Prompt": "This seems very familiar to you; what was that noise?",
             "NarratorOnly": true,
             "PrefabToSpawn": null,
             "Choices": [
@@ -221,7 +232,7 @@
                     "TargetPrompt": "bed01-staff"
                 },
                 {
-                    "Text": "Ready your {0}",
+                    "Text": "Ready your staff",
                     "TargetPrompt": "ready01-staff"
                 },
                 {
@@ -243,7 +254,7 @@
                     "TargetPrompt": "bed01-sword"
                 },
                 {
-                    "Text": "Ready your {0}",
+                    "Text": "Ready your sword",
                     "TargetPrompt": "ready01-sword"
                 },
                 {
@@ -265,7 +276,7 @@
                     "TargetPrompt": "bed01-bow"
                 },
                 {
-                    "Text": "Ready your {0}",
+                    "Text": "Ready your bow",
                     "TargetPrompt": "ready01-bow"
                 },
                 {
@@ -546,7 +557,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -561,7 +572,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -576,7 +587,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -591,15 +602,14 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
         },
         {
             "Name": "door01-sword-hoodedFigure01",
-            "Prompt": " You lay your sword on the ground. The knock is calling to you. Wanting to take you home. You trust it implicitly--not even knowing what's on the other side. It's curiously natural to you. Your hand reaches for the door but before you can open the door the knob twists and the door opens on its own. \n\nThere is nothing in front of you but the black void. Your feeling of trust is immediately lost and you turn to grab your sword. Yet it's not there. The entire room has once again faded into blackness entirely. {0} A voice reaches out to you through the darkness. Repeating {0} repeatedly. Before long you are repeating {0} along with the voice in the darkness. And then, suddenly the voice stops but you can't stop saying {0}.\n\nOver and over again you say the phrase. \"{0}\"\n\nThen it happens a hooded figure stands before you, simply appearing out of thin air. Beneath the hood is nothing but white light. Standing in stark contrast to the pitch black surrounding you.\n\nThe hooded figure reaches up and begins to lower their hood. The white light escapes the figure and assaults your senses. It envelops you completely. The warmness of the light fills you completely and before you can even understand what's happening... you die.
-            ",
+            "Prompt": "You lay your sword on the ground. The knock is calling to you. Wanting to take you home. You trust it implicitly--not even knowing what's on the other side. It's curiously natural to you. Your hand reaches for the door but before you can open the door the knob twists and the door opens on its own. \n\nThere is nothing in front of you but the black void. Your feeling of trust is immediately lost and you turn to grab your sword. Yet it's not there. The entire room has once again faded into blackness entirely. {0} A voice reaches out to you through the darkness. Repeating {0} repeatedly. Before long you are repeating {0} along with the voice in the darkness. And then, suddenly the voice stops but you can't stop saying {0}.\n\nOver and over again you say the phrase. \"{0}\"\n\nThen it happens a hooded figure stands before you, simply appearing out of thin air. Beneath the hood is nothing but white light. Standing in stark contrast to the pitch black surrounding you.\n\nThe hooded figure reaches up and begins to lower their hood. The white light escapes the figure and assaults your senses. It envelops you completely. The warmness of the light fills you completely and before you can even understand what's happening... you die.",
             "NarratorOnly": false,
             "ImageName": "hooded_Figure_B",
             "FormatIsDeathWord": true,
@@ -614,8 +624,7 @@
         },
         {
             "Name": "youWin",
-            "Prompt": "You've escaped the endless cycle of death.
-            ",
+            "Prompt": "You've escaped the endless cycle of death finally allowing yourself the peace of the grave.",
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
@@ -636,7 +645,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -651,7 +660,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -666,7 +675,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -681,7 +690,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -1080,13 +1089,26 @@
         },
         {
             "Name": "interludeFinal",
-            "Prompt": "Bears? Grandma? Assassins? Cats? It's not all what it seems. You're dead, yes. But is it really clear what {0} means?",
+            "Prompt": "You've been led astray. Trade places with your other self. (Swap phone/computer position)",
             "NarratorOnly": false,
             "FormatIsDeathWord": true,
             "PrefabToSpawn": null,
             "Choices": [
                 {
                     "Text": "You Die!",
+                    "TargetPrompt": "cluePage"
+                },
+            ]
+        },
+        {
+            "Name": "cluePage",
+            "Prompt": "You are about to be reborn; before that happens there are things you should know... {0}",
+            "NarratorOnly": false,
+            "FormatIsDeathWord": true,
+            "PrefabToSpawn": null,
+            "Choices": [
+                {
+                    "Text": "Wake Up",
                     "TargetPrompt": "wakeUp"
                 },
             ]
@@ -1362,7 +1384,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -1376,7 +1398,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -1390,7 +1412,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -1404,7 +1426,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -1417,7 +1439,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -1430,7 +1452,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -1443,7 +1465,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -1456,7 +1478,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
@@ -1470,7 +1492,7 @@
             "Choices": [
                 {
                     "Text": "You Die!",
-                    "TargetPrompt": "wakeUp"
+                    "TargetPrompt": "interludeFinal"
                 },
             ]
             
