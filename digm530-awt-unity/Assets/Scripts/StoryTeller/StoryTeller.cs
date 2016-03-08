@@ -89,10 +89,13 @@ public class StoryTeller : MonoBehaviour
 		}
 	}
 
+	string promptCopy = "";
+
 	public void ActivateActive()
     {
         if (activePrompt.Name == "cluePage")
         {
+			print(cycleCount);
             int clue1Index = cycleCount * 2;
             int clue2Index = cycleCount * 2 + 1;
             if (clue1Index >= this.story.Clues.Count)
@@ -107,11 +110,18 @@ public class StoryTeller : MonoBehaviour
             }
             else
             {
-                string promptCopy = activePrompt.Prompt;
-                activePrompt.Prompt = string.Format(promptCopy, "\n" + this.story.Clues[clue1Index]);
+				if(promptCopy == "")
+				{
+					promptCopy = activePrompt.Prompt;
+				}
+				string clue1 = this.story.Clues[clue1Index];
+				string clue2 = this.story.Clues[clue2Index];
+				print(clue1);
+				print(clue2);
+                activePrompt.Prompt = string.Format(promptCopy, "\n" + clue1);
                 this.prompter.MakePrompt(activePrompt);
                 StoryPrompt copy = new StoryPrompt(activePrompt);
-                copy.Prompt = string.Format(promptCopy, "\n" + this.story.Clues[clue2Index]);
+				copy.Prompt = string.Format(promptCopy, "\n" + clue2);
                 consoleReceiver.SendPrompt(copy);
                 cycleCount++;
                 return;
